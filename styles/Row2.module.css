@@ -1,0 +1,39 @@
+.row2Container {
+    padding-top: 1rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box1, .box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem
+}
+
+.box1 {
+    margin-right: 1rem;
+}
+
+
+.elementDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border: 2px solid var(--color2);
+}
+
+.elementSymbol {
+    font-size: 2.5rem;
+}
+
+.elementname {
+    font-size: 1rem;
+}

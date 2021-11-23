@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import PeriodicTable from '../src/components/PeriodicTable';
+import Row1 from '../src/components/Row1';
+import Row2 from '../src/components/Row2';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,6 +15,9 @@ export default function Home() {
       </Head>
       <h1>Periodic Tabel of Telements</h1>
       <small>With Next JS and CSS Grid</small>
+      {/* <PeriodicTable /> */}
+      <Row1 />
+      <Row2 />
     </div>
   );
 }

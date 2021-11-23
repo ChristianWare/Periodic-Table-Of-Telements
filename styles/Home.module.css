@@ -1,0 +1,22 @@
+.container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+.homeBgColor {
+    background: linear-gradient(#480ca8, #7209b7);
+}
+
+
+@media screen and (max-width: 568px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}

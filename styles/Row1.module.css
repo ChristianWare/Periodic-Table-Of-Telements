@@ -1,0 +1,30 @@
+.row1Container{
+    padding-top: 25rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box1, .box2 {
+    width: 64px;
+    height: 64px;
+    border: 2px solid var(--color2)
+}
+
+.elementDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.elementSymbol {
+    font-size: 2.5rem;
+}
+
+.elementname {
+    font-size: 1rem;
+}
