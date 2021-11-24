@@ -3,6 +3,7 @@ import Row1 from '../src/components/Row1';
 import Row2 from '../src/components/Row2';
 import Row3 from '../src/components/Row3';
 import Row4567 from "../src/components/Row4567";
+import Row8 from '../src/components/Row8';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Row2 />
       <Row3 />
       <Row4567 />
+      <Row8 />
     </div>
   );
 }
