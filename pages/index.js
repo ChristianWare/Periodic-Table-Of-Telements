@@ -1,13 +1,16 @@
-import Head from 'next/head'
-import Row1 from '../src/components/Row1';
-import Row2 from '../src/components/Row2';
-import Row3 from '../src/components/Row3';
+import Head from "next/head";
+import Row1 from "../src/components/Row1";
+import Row2 from "../src/components/Row2";
+import Row3 from "../src/components/Row3";
 import Row4567 from "../src/components/Row4567";
-import Row8 from '../src/components/Row8';
-import Row9 from '../src/components/Row9';
-import styles from '../styles/Home.module.css'
+import Row8 from "../src/components/Row8";
+import Row9 from "../src/components/Row9";
+import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Home({ movies }) {
+  console.log(movies);
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -25,4 +28,23 @@ export default function Home() {
       <Row9 />
     </div>
   );
+}
+
+export async function getStaticProps(context) {
+  const res = await fetch(
+    "https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=hulu&type=movie&genre=18&page=1&output_language=en&language=en",
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
+        "x-rapidapi-key": "49c3b5daa1mshc9c11e33472e817p104d34jsn3f54bf21e0d7",
+      },
+    }
+  );
+
+  const movies = await res.json();
+
+  return {
+    props: { movies },
+  };
 }

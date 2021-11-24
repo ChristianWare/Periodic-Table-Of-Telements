@@ -49,7 +49,7 @@ const elements = [
   {
     name: "Rubidium",
     symbol: "Ru",
-    id: 199990,
+    id: 10,
   },
   {
     name: "Strontium",
@@ -64,7 +64,7 @@ const elements = [
   {
     name: "Zirconium",
     symbol: "Sn",
-    id: 14443,
+    id: 13,
   },
   {
     name: "Niobium",
@@ -97,199 +97,199 @@ const elements = [
     id: 19,
   },
   {
-    name: "Copper",
+    name: "Copper2",
     symbol: "Co",
     id: 20,
   },
   {
-    name: "Zinc",
+    name: "Zinc2",
     symbol: "Zn",
+    id: 21,
+  },
+  {
+    name: "Gallium45",
+    symbol: "G",
+    id: 22,
+  },
+  {
+    name: "Germanium45",
+    symbol: "Gm",
+    id: 23,
+  },
+  {
+    name: "Arsenic45",
+    symbol: "Ar",
+    id: 24,
+  },
+  {
+    name: "Selenium45",
+    symbol: "NL",
+    id: 25,
+  },
+  {
+    name: "Bromine45",
+    symbol: "Be",
+    id: 26,
+  },
+  {
+    name: "Krypton45",
+    symbol: "Kt",
+    id: 27,
+  },
+  {
+    name: "Rubidium45",
+    symbol: "Ru",
+    id: 28,
+  },
+  {
+    name: "Strontium45",
+    symbol: "NL",
+    id: 29,
+  },
+  {
+    name: "Yttrium45",
+    symbol: "NL",
     id: 30,
   },
   {
-    name: "Gallium",
+    name: "Zirconium45",
+    symbol: "Sn",
+    id: 31,
+  },
+  {
+    name: "Niobium45",
+    symbol: "Js",
+    id: 32,
+  },
+  {
+    name: "Molybdenum45",
+    symbol: "Mo",
+    id: 33,
+  },
+  {
+    name: "Technetium45",
+    symbol: "Tc",
+    id: 34,
+  },
+  {
+    name: "Rhodium45",
+    symbol: "Rh",
+    id: 35,
+  },
+  {
+    name: "Palladium45",
+    symbol: "Pd",
+    id: 36,
+  },
+  {
+    name: "Qickel45",
+    symbol: "Nl",
+    id: 37,
+  },
+  {
+    name: "Copper3",
+    symbol: "Co",
+    id: 38,
+  },
+  {
+    name: "Zinc3",
+    symbol: "Zn",
+    id: 39,
+  },
+  {
+    name: "Gallium555",
     symbol: "G",
     id: 40,
   },
   {
-    name: "Germanium",
+    name: "Germanium555",
     symbol: "Gm",
+    id: 41,
+  },
+  {
+    name: "Arseni555c",
+    symbol: "Ar",
+    id: 42,
+  },
+  {
+    name: "Selenium555",
+    symbol: "NL",
+    id: 43,
+  },
+  {
+    name: "Bromine555",
+    symbol: "Be",
+    id: 44,
+  },
+  {
+    name: "Krypton555",
+    symbol: "Kt",
+    id: 45,
+  },
+  {
+    name: "Rubidium555",
+    symbol: "Ru",
+    id: 46,
+  },
+  {
+    name: "Strontium555",
+    symbol: "NL",
+    id: 47,
+  },
+  {
+    name: "Yttrium555",
+    symbol: "NL",
+    id: 48,
+  },
+  {
+    name: "Zirconium555",
+    symbol: "Sn",
+    id: 49,
+  },
+  {
+    name: "Niobium555",
+    symbol: "Js",
     id: 50,
   },
   {
-    name: "Arsenic",
-    symbol: "Ar",
-    id: 60,
-  },
-  {
-    name: "Selenium",
-    symbol: "NL",
-    id: 70,
-  },
-  {
-    name: "Bromine",
-    symbol: "Be",
-    id: 80,
-  },
-  {
-    name: "Krypton",
-    symbol: "Kt",
-    id: 90,
-  },
-  {
-    name: "Rubidium",
-    symbol: "Ru",
-    id: 100,
-  },
-  {
-    name: "Strontium",
-    symbol: "NL",
-    id: 110,
-  },
-  {
-    name: "Yttrium",
-    symbol: "NL",
-    id: 120,
-  },
-  {
-    name: "Zirconium",
-    symbol: "Sn",
-    id: 13,
-  },
-  {
-    name: "Niobium",
-    symbol: "Js",
-    id: 414,
-  },
-  {
-    name: "Molybdenum",
+    name: "Molybdenum555",
     symbol: "Mo",
-    id: 155,
+    id: 51,
   },
   {
-    name: "Technetium",
+    name: "Technetium555",
     symbol: "Tc",
-    id: 166,
+    id: 52,
   },
   {
-    name: "Rhodium",
+    name: "Rhodium555",
     symbol: "Rh",
-    id: 187,
+    id: 53,
   },
   {
-    name: "Palladium",
+    name: "Palladium555",
     symbol: "Pd",
-    id: 138,
+    id: 54,
   },
   {
-    name: "Qickel",
+    name: "Yickel555",
     symbol: "Nl",
-    id: 1888,
+    id: 55,
   },
   {
-    name: "Copper",
+    name: "Copper4",
     symbol: "Co",
-    id: 2888,
+    id: 56,
   },
   {
-    name: "Zinc",
+    name: "Zinc4",
     symbol: "Zn",
-    id: 3888,
+    id: 57,
   },
   {
-    name: "Gallium",
+    name: "Sallium",
     symbol: "G",
-    id: 4888,
-  },
-  {
-    name: "Germanium",
-    symbol: "Gm",
-    id: 5888,
-  },
-  {
-    name: "Arsenic",
-    symbol: "Ar",
-    id: 6888,
-  },
-  {
-    name: "Selenium",
-    symbol: "NL",
-    id: 7888,
-  },
-  {
-    name: "Bromine",
-    symbol: "Be",
-    id: 8888,
-  },
-  {
-    name: "Krypton",
-    symbol: "Kt",
-    id: 9888,
-  },
-  {
-    name: "Rubidium",
-    symbol: "Ru",
-    id: 19990,
-  },
-  {
-    name: "Strontium",
-    symbol: "NL",
-    id: 11,
-  },
-  {
-    name: "Yttrium",
-    symbol: "NL",
-    id: 12,
-  },
-  {
-    name: "Zirconium",
-    symbol: "Sn",
-    id: 133,
-  },
-  {
-    name: "Niobium",
-    symbol: "Js",
-    id: 14444,
-  },
-  {
-    name: "Molybdenum",
-    symbol: "Mo",
-    id: 15,
-  },
-  {
-    name: "Technetium",
-    symbol: "Tc",
-    id: 16,
-  },
-  {
-    name: "Rhodium",
-    symbol: "Rh",
-    id: 17,
-  },
-  {
-    name: "Palladium",
-    symbol: "Pd",
-    id: 18,
-  },
-  {
-    name: "Yickel",
-    symbol: "Nl",
-    id: 19,
-  },
-  {
-    name: "Copper",
-    symbol: "Co",
-    id: 20,
-  },
-  {
-    name: "Zinc",
-    symbol: "Zn",
-    id: 30,
-  },
-  {
-    name: "Gallium",
-    symbol: "G",
-    id: 40,
+    id: 58,
   }
 ];
 
