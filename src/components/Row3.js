@@ -2,7 +2,7 @@ import styles from "../../styles/Row3.module.css";
 
 function Row3() {
   return (
-    <div className={styles.row2Container}>
+    <div className={styles.row3Container}>
       <div className={styles.content}>
         <div className={styles.box1}>
           <div className={styles.elementDetails}>

@@ -1,27 +1,15 @@
-.row2Container {
+.row4Container {
     padding-top: 1rem;
 }
 
 .content {
     display: flex;
-    align-items:flex-start;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content:flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.box1, .box2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem
-}
-
-.box1 {
-    margin-right: 1rem;
-}
-
-.box2 {
-    margin-right: 1.8rem;
-}
 
 .elementDetails {
     display: flex;
