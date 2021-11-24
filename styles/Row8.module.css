@@ -9,8 +9,8 @@
 }
 
 .box1 {
-    width: 70px;
-    height: 70px;
+    width: 64px;
+    height: 64px;
     border: 2px solid var(--color2);
     background-color: var(--color4);
     cursor: pointer;
@@ -24,7 +24,7 @@
 }
 
 .box1:hover {
-    transform: scale(2.4, 2.4);
+    transform: scale(2.5, 2.5);
     z-index: 1;
 }
 
@@ -40,12 +40,5 @@
     .content {
         align-items: center;
         justify-content: center;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .box1:hover {
-        transform: scale(2, 2);
-        z-index: 1;
     }
 }

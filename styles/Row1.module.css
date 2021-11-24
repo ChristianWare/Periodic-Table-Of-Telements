@@ -11,13 +11,13 @@
 }
 
 .box1:hover, .box2:hover {
-    transform: scale(2.4, 2.4);
+    transform: scale(2.5, 2.5);
     z-index: 1;
     }
 
 .box1, .box2 {
-    width: 70px;
-    height: 70px;
+    width: 64px;
+    height: 64px;
     border: 2px solid var(--color2);
     background-color: var(--color4);
     
@@ -54,13 +54,5 @@
 
     .box2 {
         margin-right: 0rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .box1:hover,
-    .box2:hover {
-        transform: scale(2, 2);
-        z-index: 1;
     }
 }
