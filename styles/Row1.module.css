@@ -1,17 +1,26 @@
 .row1Container{
-    padding-top: 25rem;
+    padding-top: 25rem;    
 }
 
 .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    
 }
+
+.box1:hover, .box2:hover {
+    transform: scale(2.5, 2.5);
+    z-index: 1;
+    }
 
 .box1, .box2 {
     width: 64px;
     height: 64px;
     border: 2px solid var(--color2);
+    background-color: var(--color4);
+    
 }
 
 .box1 {
@@ -28,6 +37,7 @@
     align-items: center;
     justify-content: center;
 }
+
 
 .elementSymbol {
     font-size: 2.5rem;
@@ -46,3 +56,9 @@
         margin-right: 0rem;
     }
 }
+
+/* @media screen and (min-width: 1450px) {
+    .box2 {
+        margin-right: 5.3rem;
+    }
+} */

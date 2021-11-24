@@ -1,5 +1,5 @@
 .row4Container {
-    padding: 1rem 16rem;
+    padding: 1rem 16rem 5rem 1rem;
 }
 
 .content {
@@ -16,6 +16,17 @@
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    background-color: var(--color4);
+}
+
+.box1 {
+    background-color: var(--color4);
+    cursor: pointer;
+}
+
+.box1:hover {
+    transform: scale(2.5, 2.5);
+    z-index: 1;
 }
 
 .elementDetails {

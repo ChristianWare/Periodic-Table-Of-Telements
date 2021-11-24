@@ -1,5 +1,6 @@
 .row2Container {
     padding-top: 1rem;
+    cursor: pointer;
 }
 
 .content {
@@ -16,6 +17,7 @@
     justify-content: center;
     gap: 1rem;
     padding-bottom: 10px;
+    background-color: var(--color4);
 }
 
 
@@ -39,6 +41,12 @@
     width: 64px;
     height: 64px;
     border: 2px solid var(--color2);
+    background-color: var(--color4);
+}
+
+.elementDetails:hover {
+    transform: scale(2.5, 2.5);
+    z-index: 1;
 }
 
 .elementSymbol {
@@ -47,12 +55,6 @@
 
 .elementname {
     font-size: 1rem;
-}
-
-@media screen and (max-width: 685px) {
-    .box2 .elementDetails {
-        padding-top: 1rem;
-    }
 }
 
 @media screen and (max-width: 670px) {
@@ -71,3 +73,9 @@
         margin-right: 0rem;
     }
 }
+
+/* @media screen and (min-width: 1450px) {
+    .box2 {
+        margin-right: 5rem;
+    }
+} */

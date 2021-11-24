@@ -39,6 +39,13 @@
     width: 64px;
     height: 64px;
     border: 2px solid var(--color2);
+    background-color: var(--color4);
+    cursor: pointer;
+}
+
+.elementDetails:hover {
+    transform: scale(2.5, 2.5);
+    z-index: 1;
 }
 
 .elementSymbol {
@@ -47,12 +54,6 @@
 
 .elementname {
     font-size: 1rem;
-}
-
-@media screen and (max-width: 685px) {
-    .box2 .elementDetails {
-        padding-top: 1rem;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -70,3 +71,9 @@
         justify-content: center;
     }
 }
+
+/* @media screen and (min-width: 1450px) {
+    .box2 {
+        margin-right: 5rem;
+    }
+} */
