@@ -290,77 +290,7 @@ const elements = [
     name: "Gallium",
     symbol: "G",
     id: 40,
-  },
-  {
-    name: "Germanium",
-    symbol: "Gm",
-    id: 50,
-  },
-  {
-    name: "Arsenic",
-    symbol: "Ar",
-    id: 60,
-  },
-  {
-    name: "Selenium",
-    symbol: "NL",
-    id: 70,
-  },
-  {
-    name: "Bromine",
-    symbol: "Be",
-    id: 80,
-  },
-  {
-    name: "Krypton",
-    symbol: "Kt",
-    id: 90,
-  },
-  {
-    name: "Rubidium",
-    symbol: "Ru",
-    id: 100,
-  },
-  {
-    name: "Strontium",
-    symbol: "NL",
-    id: 110,
-  },
-  {
-    name: "Yttrium",
-    symbol: "NL",
-    id: 120,
-  },
-  {
-    name: "Zirconium",
-    symbol: "Sn",
-    id: 13,
-  },
-  {
-    name: "Niobium",
-    symbol: "Js",
-    id: 14,
-  },
-  {
-    name: "Molybdenum",
-    symbol: "Mo",
-    id: 15,
-  },
-  {
-    name: "Technetium",
-    symbol: "Tc",
-    id: 16,
-  },
-  {
-    name: "Rhodium",
-    symbol: "Rh",
-    id: 17,
-  },
-  {
-    name: "Palladium",
-    symbol: "Pd",
-    id: 18,
-  },
+  }
 ];
 
 function Row4567() {

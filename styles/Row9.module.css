@@ -1,0 +1,56 @@
+.row4Container {
+    padding: 1rem 16rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;  
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.elementDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border: 2px solid var(--color2);
+}
+
+.elementSymbol {
+    font-size: 2.5rem;
+}
+
+.elementname {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 868px) {
+    .row4Container {
+        padding: 1rem 0;
+    }
+
+    .left {
+        justify-content: flex-start;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left {
+        align-items: center;
+        justify-content: center;
+    }
+}

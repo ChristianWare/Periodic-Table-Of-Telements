@@ -16,7 +16,6 @@ function Row1() {
             <p className={styles.elementname}>Helium</p>
           </div>
         </div>
-
       </div>
     </div>
   );

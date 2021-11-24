@@ -1,11 +1,13 @@
-.row3Container {
+/* .row3Container {
     padding-top: 1rem;
-}
+} */
 
 .content {
     display: flex;
     align-items: flex-start;
     justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .box1,
@@ -17,11 +19,16 @@
 }
 
 .box1 {
-    margin-right: 1rem;
+    padding-right: 1rem;
 }
 
+
 .box2 {
-    margin-right: .3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-right: .3rem;
 }
 
 .elementDetails {
@@ -40,4 +47,26 @@
 
 .elementname {
     font-size: 1rem;
+}
+
+@media screen and (max-width: 685px) {
+    .box2 .elementDetails {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box1 {
+        padding-right: 0rem;
+    }
+
+    .box2 {
+        align-items: center;
+        justify-content: center;
+    }
 }

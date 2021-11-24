@@ -6,21 +6,29 @@
     display: flex;
     align-items:flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
 
 .box1, .box2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem
+    gap: 1rem;
+    padding-bottom: 10px;
 }
+
 
 .box1 {
     margin-right: 1rem;
 }
 
 .box2 {
-    margin-right: .3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-right: .3rem;
 }
 
 .elementDetails {
@@ -39,4 +47,27 @@
 
 .elementname {
     font-size: 1rem;
+}
+
+@media screen and (max-width: 685px) {
+    .box2 .elementDetails {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box1 {
+        margin-right: 0rem;
+    }
+
+    .box2 {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-right: 0rem;
+    }
 }
