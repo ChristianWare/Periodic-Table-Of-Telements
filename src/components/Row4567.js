@@ -49,7 +49,7 @@ const elements = [
   {
     name: "Rubidium",
     symbol: "Ru",
-    id: 10,
+    id: 199990,
   },
   {
     name: "Strontium",
@@ -64,7 +64,7 @@ const elements = [
   {
     name: "Zirconium",
     symbol: "Sn",
-    id: 13,
+    id: 14443,
   },
   {
     name: "Niobium",
@@ -92,7 +92,7 @@ const elements = [
     id: 18,
   },
   {
-    name: "Nickel",
+    name: "Pickel",
     symbol: "Nl",
     id: 19,
   },
@@ -159,77 +159,77 @@ const elements = [
   {
     name: "Niobium",
     symbol: "Js",
-    id: 14,
+    id: 414,
   },
   {
     name: "Molybdenum",
     symbol: "Mo",
-    id: 15,
+    id: 155,
   },
   {
     name: "Technetium",
     symbol: "Tc",
-    id: 16,
+    id: 166,
   },
   {
     name: "Rhodium",
     symbol: "Rh",
-    id: 17,
+    id: 187,
   },
   {
     name: "Palladium",
     symbol: "Pd",
-    id: 18,
+    id: 138,
   },
   {
-    name: "Nickel",
+    name: "Qickel",
     symbol: "Nl",
-    id: 1,
+    id: 1888,
   },
   {
     name: "Copper",
     symbol: "Co",
-    id: 2,
+    id: 2888,
   },
   {
     name: "Zinc",
     symbol: "Zn",
-    id: 3,
+    id: 3888,
   },
   {
     name: "Gallium",
     symbol: "G",
-    id: 4,
+    id: 4888,
   },
   {
     name: "Germanium",
     symbol: "Gm",
-    id: 5,
+    id: 5888,
   },
   {
     name: "Arsenic",
     symbol: "Ar",
-    id: 6,
+    id: 6888,
   },
   {
     name: "Selenium",
     symbol: "NL",
-    id: 7,
+    id: 7888,
   },
   {
     name: "Bromine",
     symbol: "Be",
-    id: 8,
+    id: 8888,
   },
   {
     name: "Krypton",
     symbol: "Kt",
-    id: 9,
+    id: 9888,
   },
   {
     name: "Rubidium",
     symbol: "Ru",
-    id: 10,
+    id: 19990,
   },
   {
     name: "Strontium",
@@ -244,12 +244,12 @@ const elements = [
   {
     name: "Zirconium",
     symbol: "Sn",
-    id: 13,
+    id: 133,
   },
   {
     name: "Niobium",
     symbol: "Js",
-    id: 14,
+    id: 14444,
   },
   {
     name: "Molybdenum",
@@ -272,7 +272,7 @@ const elements = [
     id: 18,
   },
   {
-    name: "Nickel",
+    name: "Yickel",
     symbol: "Nl",
     id: 19,
   },
