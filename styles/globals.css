@@ -2,7 +2,7 @@
   --color1: #323232;
   --color2: #295F4E;
   --color3: #6DB193;
-  --color4: #F4E5C2;
+  --color4: #F8F0DF;
   --hulu: #49FF00;
   --amazon: #FFB400;
   --netflix: #E02401;
@@ -21,6 +21,7 @@
 html {
   font-size: 62.5%;
   background-color: var(--color1);
+  /* background-color: #444941; */
   color: var(--color3)
 
 }

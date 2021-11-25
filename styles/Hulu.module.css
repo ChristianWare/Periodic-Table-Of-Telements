@@ -38,8 +38,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     border: 2px solid var(--hulu);
     color: var(--hulu);
     /* background-color: var(--color4); */

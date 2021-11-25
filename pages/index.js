@@ -22,7 +22,7 @@ export default function Home({ hulu, prime, netflix, netflix2, hbo }) {
       <Hulu hulu={hulu} />
       <Prime prime={prime} />
       <Netflix netflix={netflix} netflix2={netflix2} />
-      <Row8 />
+      {/* <Row8 /> */}
       <HBO hbo={hbo} />
     </div>
   );
