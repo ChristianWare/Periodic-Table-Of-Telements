@@ -1,15 +1,14 @@
 import Head from "next/head";
 import Row1 from "../src/components/Row1";
-import Row2 from "../src/components/Row2";
+import Hulu from "../src/components/Hulu";
 import Row3 from "../src/components/Row3";
 import Row4567 from "../src/components/Row4567";
 import Row8 from "../src/components/Row8";
 import Row9 from "../src/components/Row9";
 import styles from "../styles/Home.module.css";
 
-export default function Home({ movies }) {
-  console.log(movies);
-
+export default function Home({ hulu }) {
+  console.log(hulu);
 
   return (
     <div className={styles.container}>
@@ -20,8 +19,18 @@ export default function Home({ movies }) {
       </Head>
       <h1>Periodic Table of Telements</h1>
       <small>With Next JS and CSS Grid</small>
+      <ul>
+        {hulu.results.slice(0, 2).map((h) => (
+          <li key={h.title}>{h.title}</li>
+        ))}
+      </ul>
+
+      {hulu.results.slice(3, 8).map((h) => (
+        <h1>{h.title}</h1>
+      ))}
+
       <Row1 />
-      <Row2 />
+      <Hulu hulu={hulu} />
       <Row3 />
       <Row4567 />
       <Row8 />
@@ -30,7 +39,7 @@ export default function Home({ movies }) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   const res = await fetch(
     "https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=hulu&type=movie&genre=18&page=1&output_language=en&language=en",
     {
@@ -41,10 +50,9 @@ export async function getStaticProps(context) {
       },
     }
   );
-
-  const movies = await res.json();
+  const hulu = await res.json();
 
   return {
-    props: { movies },
+    props: { hulu },
   };
 }
