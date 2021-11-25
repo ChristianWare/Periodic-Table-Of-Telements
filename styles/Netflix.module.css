@@ -10,6 +10,13 @@
     flex-wrap: wrap;
 }
 
+.box1 {
+    color: var(--netflix);
+}
+
+.box1:hover {
+    color: var(--color1);
+}
 
 .elementDetails {
     display: flex;
@@ -18,14 +25,16 @@
     justify-content: center;
     width: 64px;
     height: 64px;
-    border: 2px solid var(--color2);
-    background-color: var(--color4);
+    border: 2px solid var(--netflix);
     cursor: pointer;
 }
+
 
 .elementDetails:hover {
     transform: scale(2.5, 2.5);
     z-index: 1;
+    background-color: var(--netflix); 
+    border: 2px solid var(--color1);
 }
 
 .elementSymbol {
@@ -33,9 +42,9 @@
 }
 
 .elementname {
-    font-size: 1rem;
+    font-size: 7px;
+    text-align: center;
 }
-
 
 @media screen and (max-width: 768px) {
     .content {

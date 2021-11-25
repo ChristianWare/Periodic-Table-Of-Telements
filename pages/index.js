@@ -7,9 +7,7 @@ import Row8 from "../src/components/Row8";
 import Row9 from "../src/components/Row9";
 import styles from "../styles/Home.module.css";
 
-export default function Home({ hulu, prime }) {
-  console.log(hulu);
-  console.log(prime);
+export default function Home({ hulu, prime, netflix, netflix2 }) {
 
   return (
     <div className={styles.container}>
@@ -20,11 +18,11 @@ export default function Home({ hulu, prime }) {
       </Head>
       <h1>Periodic Table of Telements</h1>
       <small>With Next JS and CSS Grid</small>
-    
+
       <Row1 />
       <Hulu hulu={hulu} />
       <Prime prime={prime} />
-      <Netflix />
+      <Netflix netflix={netflix} netflix2={netflix2} />
       <Row8 />
       <Row9 />
     </div>
@@ -64,10 +62,49 @@ export async function getStaticProps() {
 
   // ******* prime end
 
+  // ******* netflix start
+  const netflixRes = await fetch(
+    "https://streaming-availability.p.rapidapi.com/search/ultra?country=us&services=netflix%2Chulu&type=movie&order_by=imdb_vote_count&year_min=2000&year_max=2020&page=4&genres=18%2C80&genres_relation=or&desc=true&language=en&min_imdb_rating=70&max_imdb_rating=90&min_imdb_vote_count=10000&max_imdb_vote_count=1000000&output_language=en",
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
+        "x-rapidapi-key": process.env.PRIVATE_API_KEY,
+      },
+    }
+  );
+
+  const netflix = await netflixRes.json();
+
+  // ******* netflix end
+
+  // ******* netflix 2 start
+   const netflix2Res = await fetch(
+     "https://streaming-availability.p.rapidapi.com/search/ultra?country=us&services=netflix&type=series&order_by=imdb_vote_count&year_min=2000&year_max=2020&page=1&genres=18%2C80&genres_relation=or&desc=true&language=en&min_imdb_rating=70&max_imdb_rating=90&min_imdb_vote_count=10000&max_imdb_vote_count=1000000&output_language=en",
+     {
+       method: "GET",
+       headers: {
+         "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
+         "x-rapidapi-key": process.env.PRIVATE_API_KEY,
+       },
+     }
+   );
+
+   const netflix2 = await netflix2Res.json();
+
+
+
+
+  // ******* netflix 2 end
+
   return {
     props: {
       hulu,
       prime,
+      netflix,
+      netflix2,
     },
   };
 }
+
+
