@@ -16,13 +16,14 @@
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    background-color: var(--color4);
 }
 
 .box1 {
-    background-color: var(--color4);
     cursor: pointer;
+    color: var(--hbo);
 }
+
+
 
 .box1:hover {
     transform: scale(2.5, 2.5);
@@ -36,7 +37,13 @@
     justify-content: center;
     width: 64px;
     height: 64px;
-    border: 2px solid var(--color2);
+    border: 2px solid var(--hbo);
+}
+
+.elementDetails:hover {
+    background-color: var(--hbo);
+    color: var(--color1);
+    border: 2px solid var(--color1);
 }
 
 .elementSymbol {
@@ -44,7 +51,8 @@
 }
 
 .elementname {
-    font-size: 1rem;
+    font-size: 7px;
+    text-align: center;
 }
 
 @media screen and (max-width: 868px) {

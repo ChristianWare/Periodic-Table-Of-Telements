@@ -1,4 +1,4 @@
-import styles from '../../styles/Row9.module.css'
+import styles from "../../styles/HBO.module.css";
 
 const elements = [
   {
@@ -144,23 +144,26 @@ const elements = [
 ];
 
 
-function Row9() {
-    return (
-      <div className={styles.row4Container}>
-        <div className={styles.content}>
-          <div className={styles.left}>
-            {elements.map((element) => (
-              <div key={element.id} className={styles.box1}>
-                <div className={styles.elementDetails}>
-                  <h2 className={styles.elementSymbol}>{element.symbol}</h2>
-                  <p className={styles.elementname}>{element.name}</p>
-                </div>
+function HBO({ hbo }) {
+  console.log(hbo);
+  return (
+    <div className={styles.row4Container}>
+      <div className={styles.content}>
+
+      
+        <div className={styles.left}>
+          {hbo.results.map((h) => (
+            <div key={h.title} className={styles.box1}>
+              <div className={styles.elementDetails}>
+                <h2 className={styles.elementSymbol}>{h.title.slice(0, 2)}</h2>
+                <p className={styles.elementname}>{h.title}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
-    );
+    </div>
+  );
 }
 
-export default Row9
+export default HBO;

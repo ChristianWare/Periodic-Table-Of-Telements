@@ -4,11 +4,10 @@ import Hulu from "../src/components/Hulu";
 import Prime from "../src/components/Prime";
 import Netflix from "../src/components/Netflix";
 import Row8 from "../src/components/Row8";
-import Row9 from "../src/components/Row9";
+import HBO from "../src/components/HBO";
 import styles from "../styles/Home.module.css";
 
-export default function Home({ hulu, prime, netflix, netflix2 }) {
-
+export default function Home({ hulu, prime, netflix, netflix2, hbo }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -24,7 +23,7 @@ export default function Home({ hulu, prime, netflix, netflix2 }) {
       <Prime prime={prime} />
       <Netflix netflix={netflix} netflix2={netflix2} />
       <Row8 />
-      <Row9 />
+      <HBO hbo={hbo} />
     </div>
   );
 }
@@ -79,23 +78,38 @@ export async function getStaticProps() {
   // ******* netflix end
 
   // ******* netflix 2 start
-   const netflix2Res = await fetch(
-     "https://streaming-availability.p.rapidapi.com/search/ultra?country=us&services=netflix&type=series&order_by=imdb_vote_count&year_min=2000&year_max=2020&page=1&genres=18%2C80&genres_relation=or&desc=true&language=en&min_imdb_rating=70&max_imdb_rating=90&min_imdb_vote_count=10000&max_imdb_vote_count=1000000&output_language=en",
-     {
-       method: "GET",
-       headers: {
-         "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
-         "x-rapidapi-key": process.env.PRIVATE_API_KEY,
-       },
-     }
-   );
+  const netflix2Res = await fetch(
+    "https://streaming-availability.p.rapidapi.com/search/ultra?country=us&services=netflix&type=series&order_by=imdb_vote_count&year_min=2000&year_max=2020&page=1&genres=18%2C80&genres_relation=or&desc=true&language=en&min_imdb_rating=70&max_imdb_rating=90&min_imdb_vote_count=10000&max_imdb_vote_count=1000000&output_language=en",
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
+        "x-rapidapi-key": process.env.PRIVATE_API_KEY,
+      },
+    }
+  );
 
-   const netflix2 = await netflix2Res.json();
-
-
-
+  const netflix2 = await netflix2Res.json();
 
   // ******* netflix 2 end
+
+  // ******* HBO start
+  
+  const hboRes = await fetch(
+    "https://streaming-availability.p.rapidapi.com/search/ultra?country=us&services=hbo&type=series&order_by=imdb_vote_count&year_min=2000&year_max=2020&page=1&genres=18%2C80&genres_relation=or&desc=true&language=en&min_imdb_rating=70&max_imdb_rating=90&min_imdb_vote_count=10000&max_imdb_vote_count=1000000&output_language=en",
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
+        "x-rapidapi-key": process.env.PRIVATE_API_KEY,
+      },
+    }
+  );
+
+  const hbo = await hboRes.json();
+
+
+  // ******* HBO end
 
   return {
     props: {
@@ -103,6 +117,7 @@ export async function getStaticProps() {
       prime,
       netflix,
       netflix2,
+      hbo,
     },
   };
 }
