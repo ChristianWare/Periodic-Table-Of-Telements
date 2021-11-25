@@ -1,4 +1,4 @@
-import styles from "../../styles/Row3.module.css";
+import styles from "../../styles/Prime.module.css";
 
 function Row3() {
   return (

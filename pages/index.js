@@ -1,14 +1,15 @@
 import Head from "next/head";
 import Row1 from "../src/components/Row1";
 import Hulu from "../src/components/Hulu";
-import Row3 from "../src/components/Row3";
+import Prime from "../src/components/Prime";
 import Row4567 from "../src/components/Row4567";
 import Row8 from "../src/components/Row8";
 import Row9 from "../src/components/Row9";
 import styles from "../styles/Home.module.css";
 
-export default function Home({ hulu }) {
+export default function Home({ hulu, prime }) {
   console.log(hulu);
+  console.log(prime);
 
   return (
     <div className={styles.container}>
@@ -31,7 +32,7 @@ export default function Home({ hulu }) {
 
       <Row1 />
       <Hulu hulu={hulu} />
-      <Row3 />
+      <Prime prime={prime} />
       <Row4567 />
       <Row8 />
       <Row9 />
@@ -40,19 +41,42 @@ export default function Home({ hulu }) {
 }
 
 export async function getStaticProps() {
+  // ******* hulu start
   const res = await fetch(
-    "https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=hulu&type=movie&genre=18&page=1&output_language=en&language=en",
+    "https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=prime&type=series&genre=18&page=20&output_language=en&language=en",
     {
       method: "GET",
       headers: {
         "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
-        "x-rapidapi-key": "49c3b5daa1mshc9c11e33472e817p104d34jsn3f54bf21e0d7",
+        "x-rapidapi-key": process.env.PRIVATE_API_KEY,
       },
     }
   );
+
   const hulu = await res.json();
 
+  // ******* hulu end
+
+  // ******* prime start
+  const primeRes = await fetch(
+    "https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=prime&type=movie&genre=18&page=1&output_language=en&language=en",
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
+        "x-rapidapi-key": process.env.PRIVATE_API_KEY,
+      },
+    }
+  );
+
+  const prime = await primeRes.json();
+
+  // ******* prime end
+
   return {
-    props: { hulu },
+    props: {
+      hulu,
+      prime,
+    },
   };
 }
