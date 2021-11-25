@@ -2,7 +2,7 @@ import Head from "next/head";
 import Row1 from "../src/components/Row1";
 import Hulu from "../src/components/Hulu";
 import Prime from "../src/components/Prime";
-import Row4567 from "../src/components/Row4567";
+import Netflix from "../src/components/Netflix";
 import Row8 from "../src/components/Row8";
 import Row9 from "../src/components/Row9";
 import styles from "../styles/Home.module.css";
@@ -20,20 +20,11 @@ export default function Home({ hulu, prime }) {
       </Head>
       <h1>Periodic Table of Telements</h1>
       <small>With Next JS and CSS Grid</small>
-      <ul>
-        {hulu.results.slice(0, 2).map((h) => (
-          <li key={h.title}>{h.title}</li>
-        ))}
-      </ul>
-
-      {hulu.results.slice(3, 8).map((h) => (
-        <h1>{h.title}</h1>
-      ))}
-
+    
       <Row1 />
       <Hulu hulu={hulu} />
       <Prime prime={prime} />
-      <Row4567 />
+      <Netflix />
       <Row8 />
       <Row9 />
     </div>
@@ -59,7 +50,7 @@ export async function getStaticProps() {
 
   // ******* prime start
   const primeRes = await fetch(
-    "https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=prime&type=movie&genre=18&page=1&output_language=en&language=en",
+    "https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=prime&type=movie&genre=18&page=20&output_language=en&language=en",
     {
       method: "GET",
       headers: {

@@ -1,4 +1,4 @@
-import styles from "../../styles/Row4567.module.css";
+import styles from "../../styles/Netflix.module.css";
 
 const elements = [
   {
@@ -293,7 +293,7 @@ const elements = [
   }
 ];
 
-function Row4567() {
+function Netflix() {
   return (
     <div className={styles.row4Container}>
       <div className={styles.content}>
@@ -310,4 +310,4 @@ function Row4567() {
   );
 }
 
-export default Row4567;
+export default Netflix;

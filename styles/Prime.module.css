@@ -1,14 +1,14 @@
-/* .row3Container {
-    padding-top: 1rem;
-} */
+.primeContainer {
+    cursor: pointer;
+}
 
 .content {
     display: flex;
     align-items: flex-start;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
 }
+
 
 .box1,
 .box2 {
@@ -16,18 +16,19 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    padding-right: 1rem;
+    flex-wrap: wrap;
 }
+
 
 .box1 {
-    padding-right: 1rem;
+    margin-right: 1rem;
 }
-
 
 .box2 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-wrap: wrap;
     padding-right: .3rem;
 }
 
@@ -38,36 +39,58 @@
     justify-content: center;
     width: 64px;
     height: 64px;
-    border: 2px solid var(--color2);
-    background-color: var(--color4);
-    cursor: pointer;
+    border: 2px solid var(--amazon);
+    color: var(--amazon);
+    /* background-color: var(--color4); */
 }
+
+
 
 .elementDetails:hover {
     transform: scale(2.5, 2.5);
     z-index: 1;
+    background-color: var(--amazon);
+    color: var(--color1);
+    border-color: var(--color1)
 }
+
 
 .elementSymbol {
     font-size: 2.5rem;
+    text-transform: capitalize;
 }
 
 .elementname {
-    font-size: 1rem;
+    font-size: 7px;
+    text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 670px) {
     .content {
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
 
     .box1 {
-        padding-right: 0rem;
+        margin-right: 0rem;
     }
 
     .box2 {
-        align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+        margin-right: 0rem;
+    }
+}
+
+
+@media screen and (max-width: 694px) {
+    .box1 {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .box1 {
+        padding-right: .3rem;
     }
 }

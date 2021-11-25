@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
     padding-bottom: 10px;
     padding-right: 1rem;
@@ -29,7 +30,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-wrap: wrap;
     padding-right: .3rem;
 }
 
@@ -58,6 +58,7 @@
 
 .elementSymbol {
     font-size: 2.5rem;
+    text-transform: capitalize;
 }
 
 .elementname {
@@ -82,3 +83,9 @@
     }
 }
 
+
+@media screen and (max-width: 670px) {
+    .box1 {
+        padding-right: .3rem;
+    }
+}

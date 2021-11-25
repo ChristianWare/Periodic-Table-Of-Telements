@@ -1,48 +1,29 @@
 import styles from "../../styles/Prime.module.css";
 
-function Row3() {
+function Prime({ prime }) {
   return (
-    <div className={styles.row3Container}>
+    <div className={styles.primeContainer}>
       <div className={styles.content}>
         <div className={styles.box1}>
-          <div className={styles.elementDetails}>
-            <h2 className={styles.elementSymbol}>Na</h2>
-            <p className={styles.elementname}>Lithium</p>
-          </div>
-          <div className={styles.elementDetails}>
-            <h2 className={styles.elementSymbol}>Mg</h2>
-            <p className={styles.elementname}>Beronium</p>
-          </div>
+          {prime.results.slice(2, 4).map((p) => (
+            <div key={p.title} className={styles.elementDetails}>
+              <h2 className={styles.elementSymbol}>{p.title.slice(3, 5)}</h2>
+              <p className={styles.elementname}>{p.title}</p>
+            </div>
+          ))}
         </div>
+
         <div className={styles.box2}>
-          <div className={styles.elementDetails}>
-            <h2 className={styles.elementSymbol}>Ai</h2>
-            <p className={styles.elementname}>Helium</p>
-          </div>
-          <div className={styles.elementDetails}>
-            <h2 className={styles.elementSymbol}>Si</h2>
-            <p className={styles.elementname}>Helium</p>
-          </div>
-          <div className={styles.elementDetails}>
-            <h2 className={styles.elementSymbol}>P</h2>
-            <p className={styles.elementname}>Helium</p>
-          </div>
-          <div className={styles.elementDetails}>
-            <h2 className={styles.elementSymbol}>S</h2>
-            <p className={styles.elementname}>Helium</p>
-          </div>
-          <div className={styles.elementDetails}>
-            <h2 className={styles.elementSymbol}>Ci</h2>
-            <p className={styles.elementname}>Helium</p>
-          </div>
-          <div className={styles.elementDetails}>
-            <h2 className={styles.elementSymbol}>Ar</h2>
-            <p className={styles.elementname}>Helium</p>
-          </div>
+          {prime.results.slice(2, 8).map((p) => (
+            <div key={p.title} className={styles.elementDetails}>
+              <h2 className={styles.elementSymbol}>{p.title.slice(4, 6)}</h2>
+              <p className={styles.elementname}>{p.title}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 }
 
-export default Row3;
+export default Prime;

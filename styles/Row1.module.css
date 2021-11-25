@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     cursor: pointer;
 }
 
@@ -70,5 +71,12 @@
 
     .box2 {
         margin-right: 0rem;
+    }
+}
+
+
+@media screen and (max-width: 670px) {
+    .content {
+        padding-right: .3rem;
     }
 }
