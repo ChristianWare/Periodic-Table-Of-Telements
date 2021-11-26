@@ -7,8 +7,9 @@ import Row8 from "../src/components/Row8";
 import HBO from "../src/components/HBO";
 import styles from "../styles/Home.module.css";
 import Hero from "../src/components/Hero";
+import Disney from "../src/components/Disney";
 
-export default function Home({ hulu, prime, netflix, netflix2, hbo }) {
+export default function Home({ hulu, prime, netflix, netflix2, hbo, disney }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -23,6 +24,7 @@ export default function Home({ hulu, prime, netflix, netflix2, hbo }) {
       <Netflix netflix={netflix} netflix2={netflix2} />
       <Row8 />
       <HBO hbo={hbo} />
+      <Disney disney={disney} />
     </div>
   );
 }
@@ -109,6 +111,24 @@ export async function getStaticProps() {
 
   // ******* HBO end
 
+  // ******* Disney Start
+
+  const disneyRes = await fetch(
+    "https://streaming-availability.p.rapidapi.com/search/ultra?country=us&services=disney&type=movie&order_by=imdb_vote_count&year_min=2000&year_max=2020&page=1&genres=18%2C80&genres_relation=or&desc=true&language=en&min_imdb_rating=70&max_imdb_rating=100&min_imdb_vote_count=10000&max_imdb_vote_count=1000000&output_language=en",
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
+        "x-rapidapi-key": process.env.PRIVATE_API_KEY,
+      },
+    }
+  );
+
+  const disney = await disneyRes.json();
+
+  // ******* Disney end
+
+  
   return {
     props: {
       hulu,
@@ -116,6 +136,7 @@ export async function getStaticProps() {
       netflix,
       netflix2,
       hbo,
+      disney,
     },
   };
 }

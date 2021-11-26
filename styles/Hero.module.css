@@ -17,18 +17,13 @@
     font-family: 'PhageRegular',
     sans-serif;
     color: transparent;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: .01px;
     -webkit-text-stroke-color: var(--color4);
-    /* letter-spacing: .5rem; */
 }
 
 @media screen and (max-width: 480px) {
     .heroContainer h1 {
         font-size: 4rem;
         line-height: 1.2;
-    }
-
-    .tel {
-        -webkit-text-stroke-width: .5px;
     }
 }

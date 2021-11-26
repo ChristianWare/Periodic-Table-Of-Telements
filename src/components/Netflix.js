@@ -20,15 +20,6 @@ function Netflix({ netflix, netflix2 }) {
             </div>
           </div>
         ))}
-
-        {/* {elements.map((element) => (
-          <div key={element.id} className={styles.box1}>
-            <div className={styles.elementDetails}>
-              <h2 className={styles.elementSymbol}>{element.symbol}</h2>
-              <p className={styles.elementname}>{element.name}</p>
-            </div>
-          </div>
-        ))} */}
       </div>
     </div>
   );
