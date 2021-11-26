@@ -10,6 +10,12 @@ function Hero() {
           MENTS
         </span>
       </h1>
+      <div className={styles.keyContainer}>
+        <h4>Prime</h4>
+        <h4>Hulu</h4>
+        <h4>Netflix</h4>
+        <h4>Hbo Max</h4>
+      </div>
     </div>
   );
 }
