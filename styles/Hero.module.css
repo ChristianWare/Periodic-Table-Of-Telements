@@ -21,6 +21,16 @@
     -webkit-text-stroke-color: var(--color4);
 }
 
+.arrow {
+    position: absolute;
+    margin-top: 5%;
+    right: 0;
+    width: 12rem;
+    height: 12rem;
+    background: url('/public/images/arrow.svg') no-repeat;
+    background-size: cover;
+}
+
 @media screen and (max-width: 480px) {
     .heroContainer h1 {
         font-size: 4rem;

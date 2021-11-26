@@ -1,6 +1,5 @@
-.disneyContainer {
-    padding-top: 25rem;
-    padding-bottom: 25rem;
+.paramountContainer {
+    padding-top: 20rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,6 +35,17 @@
     color: transparent;
     -webkit-text-stroke-width: .01px;
     -webkit-text-stroke-color: var(--color4);
+}
+
+.arrowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.arrow {
+    font-size: 25rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -100,7 +110,13 @@
 }
 
 @media screen and (max-width: 981px) {
-    .disneyContainer {
+    .paramountContainer {
         flex-direction: column-reverse;
+    }
+
+    .arrowContainer {
+        transform: rotate(-45deg);
+        position: relative;
+        left: 0px
     }
 }
