@@ -9,10 +9,6 @@
     overflow: hidden;
 }
 
-.homeBgColor {
-    background: linear-gradient(#480ca8, #7209b7);
-}
-
 
 @media screen and (max-width: 568px) {
     .container {

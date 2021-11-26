@@ -10,18 +10,17 @@
 }
 
 @font-face {
-  font-family: "Angled";
-  src: url("/fonts/Angled.otf");
+  font-family: "PhageRegular";
+  src: url("/fonts/PhageRegular.otf");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Typography Scale */
 
 html {
   font-size: 62.5%;
   background-color: var(--color1);
-  /* background-color: #444941; */
   color: var(--color3)
 
 }
@@ -81,4 +80,16 @@ html {
 ::selection {
   color: var(--color3);
   background-color: var(--color2);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
 }
