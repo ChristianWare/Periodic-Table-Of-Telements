@@ -23,6 +23,7 @@
 
 .box1 {
     margin-right: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .box2 {
@@ -70,21 +71,22 @@
         align-items: center;
     }
 
-    .box1 {
+    /* .box1 {
         margin-right: 0rem;
-    }
+    } */
 
     .box2 {
         justify-content: center;
         flex-wrap: wrap;
-        margin-right: 0rem;
+        /* margin-right: 0rem; */
     }
 }
 
 
-@media screen and (max-width: 694px) {
+@media screen and (max-width: 645px) {
     .box1 {
-        padding-bottom: 10px;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
     }
 }
 
@@ -93,3 +95,4 @@
         padding-right: .3rem;
     }
 }
+

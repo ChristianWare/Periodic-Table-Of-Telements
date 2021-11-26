@@ -9,8 +9,9 @@
    letter-spacing: .5rem;
    color: var(--color4);
    position: relative;
-   padding-bottom: 1rem;
+   padding-bottom: 2rem;
    line-height: 1.2;
+
 }
 
 .tel {
@@ -21,19 +22,21 @@
     -webkit-text-stroke-color: var(--color4);
 }
 
-.arrow {
-    position: absolute;
-    margin-top: 5%;
-    right: 0;
-    width: 12rem;
-    height: 12rem;
-    background: url('/public/images/arrow.svg') no-repeat;
-    background-size: cover;
+.underline {
+    border-bottom: solid 5px var(--color4);
+    width: fit-content;
+    font-family: 'PhageRegular',
+    sans-serif;
+    padding-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 480px) {
     .heroContainer h1 {
         font-size: 4rem;
         line-height: 1.2;
+    }
+
+    .tel {
+        -webkit-text-stroke-width: 1px;
     }
 }

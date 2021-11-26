@@ -1,7 +1,7 @@
 .disneyContainer {
     padding-top: 20rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 2rem;
 }
@@ -14,6 +14,12 @@
     flex-wrap: wrap;
 }
 
+.text {
+    border-bottom: solid 5px var(--disney);
+    margin-bottom: 5rem;
+    width: fit-content;
+    margin-top: -1.5rem;
+}
 
 .text h1 {
     font-family: 'PhageRegular', sans-serif;
@@ -31,7 +37,7 @@
         sans-serif;
     color: transparent;
     -webkit-text-stroke-width: .01px;
-    -webkit-text-stroke-color: var(--color4);
+    -webkit-text-stroke-color: var(--disney);
 }
 
 .arrowContainer {
@@ -96,6 +102,10 @@
         line-height: 1.2;
         text-align: center;
     }
+    
+    .tel {
+        -webkit-text-stroke-width: 1px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -104,12 +114,17 @@
         align-items: center;
         justify-content: center;
     }
+
+    
 }
 
 @media screen and (max-width: 981px) {
     .disneyContainer {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
+    
 
     .text h1 {
         text-align: center;
@@ -118,6 +133,6 @@
     .arrowContainer {
         transform: rotate(45deg);
         position: relative;
-        left: 30px
+        left: 5px
     }
 }

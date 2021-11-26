@@ -9,8 +9,9 @@ import styles from "../styles/Home.module.css";
 import Hero from "../src/components/Hero";
 import Disney from "../src/components/Disney";
 import Paramount from "../src/components/Paramount";
+import Peacock from "../src/components/Peacock";
 
-export default function Home({ hulu, prime, netflix, netflix2, hbo, disney, para }) {
+export default function Home({ hulu, prime, netflix, netflix2, hbo, disney, para, peacock }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -27,6 +28,7 @@ export default function Home({ hulu, prime, netflix, netflix2, hbo, disney, para
       <HBO hbo={hbo} />
       <Disney disney={disney} />
       <Paramount para={para} />
+      <Peacock peacock={peacock} />
     </div>
   );
 }
@@ -145,7 +147,23 @@ export async function getStaticProps() {
 
   // ******* Paremount end
 
-  
+  // ******* Peacock start
+
+  const peacockRes = await fetch(
+    "https://streaming-availability.p.rapidapi.com/search/pro?country=us&service=peacock&type=movie&order_by=original_title&year_min=2000&year_max=2020&genre=18&page=1&desc=true&language=en&output_language=en",
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
+        "x-rapidapi-key": process.env.PRIVATE_API_KEY,
+      },
+    }
+  );
+
+  const peacock = await peacockRes.json();
+
+  // ******* Peacock end
+
   return {
     props: {
       hulu,
@@ -155,6 +173,7 @@ export async function getStaticProps() {
       hbo,
       disney,
       para,
+      peacock,
     },
   };
 }

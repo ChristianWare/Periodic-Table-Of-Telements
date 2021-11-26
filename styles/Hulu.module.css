@@ -73,9 +73,9 @@
         align-items: center;
     }
 
-    .box1 {
+    /* .box1 {
         margin-right: 0rem;
-    }
+    } */
 
     .box2 {
         justify-content: center;
@@ -88,5 +88,11 @@
 @media screen and (max-width: 670px) {
     .box1 {
         padding-right: .3rem;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .box1 {
+        margin-left: 1rem;
     }
 }
