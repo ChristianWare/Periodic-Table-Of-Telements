@@ -1,5 +1,5 @@
 :root {
-  --color1: #323232;
+  --color1: rgb(50, 50, 50);
   --color2: #295F4E;
   --color3: #6DB193;
   --color4: #F8F0DF;
@@ -14,6 +14,7 @@
   src: url("/fonts/PhageRegular.otf");
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Typography Scale */
@@ -21,7 +22,7 @@
 html {
   font-size: 62.5%;
   background-color: var(--color1);
-  color: var(--color3)
+  color: var(--color4)
 
 }
 
@@ -78,8 +79,8 @@ html {
 }
 
 ::selection {
-  color: var(--color3);
-  background-color: var(--color2);
+  color: var(--color1);
+  background-color: var(--color4);
 }
 
 @media screen and (max-width: 768px) {

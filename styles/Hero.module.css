@@ -1,10 +1,10 @@
 .heroContainer {
-    position: relative;
+    padding-top: 5rem;
 }
 
 .heroContainer h1 {
    font-family: 'PhageRegular', sans-serif;
-   font-size: 6.5rem;
+   font-size: 7rem;
    text-align: center;
    letter-spacing: .5rem;
    color: var(--color4);
@@ -13,9 +13,22 @@
    line-height: 1.2;
 }
 
+.tel {
+    font-family: 'PhageRegular',
+    sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color4);
+    /* letter-spacing: .5rem; */
+}
+
 @media screen and (max-width: 480px) {
     .heroContainer h1 {
         font-size: 4rem;
         line-height: 1.2;
+    }
+
+    .tel {
+        -webkit-text-stroke-width: .5px;
     }
 }
