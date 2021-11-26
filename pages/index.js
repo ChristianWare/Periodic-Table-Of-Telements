@@ -8,8 +8,9 @@ import HBO from "../src/components/HBO";
 import styles from "../styles/Home.module.css";
 import Hero from "../src/components/Hero";
 import Disney from "../src/components/Disney";
+import Paramount from "../src/components/Paramount";
 
-export default function Home({ hulu, prime, netflix, netflix2, hbo, disney }) {
+export default function Home({ hulu, prime, netflix, netflix2, hbo, disney, para }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -25,6 +26,7 @@ export default function Home({ hulu, prime, netflix, netflix2, hbo, disney }) {
       <Row8 />
       <HBO hbo={hbo} />
       <Disney disney={disney} />
+      <Paramount para={para} />
     </div>
   );
 }
@@ -126,7 +128,22 @@ export async function getStaticProps() {
 
   const disney = await disneyRes.json();
 
-  // ******* Disney end
+  // ******* Paramount start
+
+  const paraRes = await fetch(
+    "https://streaming-availability.p.rapidapi.com/search/ultra?country=us&services=paramount&type=series&order_by=imdb_vote_count&year_min=2000&year_max=2020&page=1&genres=18%2C80&genres_relation=or&desc=true&language=en&min_imdb_rating=70&max_imdb_rating=100&min_imdb_vote_count=10000&max_imdb_vote_count=1000000&output_language=en",
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
+        "x-rapidapi-key": process.env.PRIVATE_API_KEY,
+      },
+    }
+  );
+
+  const para = await paraRes.json();
+
+  // ******* Paremount end
 
   
   return {
@@ -137,6 +154,7 @@ export async function getStaticProps() {
       netflix2,
       hbo,
       disney,
+      para,
     },
   };
 }

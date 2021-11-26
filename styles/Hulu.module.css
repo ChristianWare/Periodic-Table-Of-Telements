@@ -42,7 +42,7 @@
     height: 60px;
     border: 2px solid var(--hulu);
     color: var(--hulu);
-    /* background-color: var(--color4); */
+    transition: all 0.1s ease;
 }
 
 
@@ -52,7 +52,8 @@
     z-index: 1;
     background-color: var(--hulu);
     color: var(--color1);
-    border-color: var(--color1)
+    border-color: var(--color1);
+    transition: all 0.1s ease;
 }
 
 

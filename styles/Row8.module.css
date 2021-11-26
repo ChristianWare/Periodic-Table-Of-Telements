@@ -13,11 +13,13 @@
     height: 64px;
     border: 2px solid var(--amazon);
     cursor: pointer;
+    transition: all 0.1s ease;
 }
 
 .box1:hover {
     border: 2px solid var(--color1);
     background-color: var(--amazon);
+    transition: all 0.1s ease;
 }
 
 .elementDetails {
@@ -27,11 +29,13 @@
     justify-content: center;
     color: var(--amazon);
     padding-top: .4rem;
+    transition: all 0.1s ease;
 }
 
 .elementDetails:hover {
     background-color: var(--amazon);
     color: var(--color1);
+    transition: all 0.1s ease;
 }
 
 .box1:hover {

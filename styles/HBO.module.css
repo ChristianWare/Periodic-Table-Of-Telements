@@ -16,18 +16,19 @@
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    transition: all 0.1s ease;
 }
 
 .box1 {
     cursor: pointer;
     color: var(--hbo);
+    transition: all 0.1s ease;
 }
-
-
 
 .box1:hover {
     transform: scale(2.5, 2.5);
     z-index: 1;
+    transition: all 0.1s ease;
 }
 
 .elementDetails {
@@ -38,21 +39,25 @@
     width: 60px;
     height: 60px;
     border: 2px solid var(--hbo);
+    transition: all 0.1s ease;
 }
 
 .elementDetails:hover {
     background-color: var(--hbo);
     color: var(--color1);
     border: 2px solid var(--color1);
+    transition: all 0.1s ease;
 }
 
 .elementSymbol {
     font-size: 2.5rem;
+    transition: all 0.1s ease;
 }
 
 .elementname {
     font-size: 7px;
     text-align: center;
+    transition: all 0.1s ease;
 }
 
 @media screen and (max-width: 868px) {

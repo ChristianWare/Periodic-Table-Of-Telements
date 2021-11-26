@@ -41,17 +41,16 @@
     height: 60px;
     border: 2px solid var(--amazon);
     color: var(--amazon);
-    /* background-color: var(--color4); */
+    transition: all 0.1s ease;
 }
-
-
 
 .elementDetails:hover {
     transform: scale(2.5, 2.5);
     z-index: 1;
     background-color: var(--amazon);
     color: var(--color1);
-    border-color: var(--color1)
+    border-color: var(--color1);
+    transition: all 0.1s ease;
 }
 
 

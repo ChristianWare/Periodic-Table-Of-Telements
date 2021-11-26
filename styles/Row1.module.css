@@ -15,12 +15,14 @@
     z-index: 1;
         color: var(--color1);
         background-color: var(--amazon);
-        border-color: var(--color1)
+        border-color: var(--color1);
+        transition: all 0.1s ease;
     }
 
 .box1, .box2 {
     width: 60px;
     height: 60px;
+    transition: all 0.1s ease;
     
 }
 
@@ -42,6 +44,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.1s ease;
 }
 
 
@@ -54,10 +57,12 @@
     color: var(--color1);
     background-color: var(--amazon);
     border-color: var(--color1);
+    transition: all 0.1s ease;
 }
 
 .elementDetails:hover {
     color: var(--color1);
+    transition: all 0.1s ease;
 }
 
 

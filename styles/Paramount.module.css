@@ -1,5 +1,6 @@
 .disneyContainer {
     padding-top: 25rem;
+    padding-bottom: 25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,11 +15,14 @@
     flex-wrap: wrap;
 }
 
+/* .text {
+    transform: rotate(-90deg);
+} */
 
 .text h1 {
     font-family: 'PhageRegular', sans-serif;
     font-size: 7rem;
-    text-align: right;
+    text-align: left;
     letter-spacing: .5rem;
     color: var(--color4);
     position: relative;
@@ -42,7 +46,7 @@
 }
 
 .box1 {
-    color: var(--disney);
+    color: var(--paramount);
 }
 
 .box1:hover {
@@ -56,16 +60,16 @@
     justify-content: center;
     width: 60px;
     height: 60px;
-    border: 2px solid var(--disney);
+    border: 2px solid var(--paramount);
     cursor: pointer;
-    transition: all 0.1s ease;
+    transition: all .1s ease-in;
 }
 
 
 .elementDetails:hover {
     transform: scale(2.5, 2.5);
     z-index: 1;
-    background-color: var(--disney);
+    background-color: var(--paramount);
     border: 2px solid var(--color1);
     transition: all 0.1s ease;
 }
@@ -88,7 +92,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+
     .content {
         align-items: center;
         justify-content: center;
@@ -97,6 +101,6 @@
 
 @media screen and (max-width: 981px) {
     .disneyContainer {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
