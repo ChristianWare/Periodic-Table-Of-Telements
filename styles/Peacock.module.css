@@ -4,7 +4,6 @@
    justify-content: space-between;
    padding-top: 2rem;
    padding-bottom: 20rem;
-   /* gap: 5rem; */
 }
 
 .content {
@@ -185,5 +184,9 @@
         font-size: 4rem;
         line-height: 1.2;
         text-align: center;
+    }
+
+    .tel {
+       -webkit-text-stroke-width: 1px;
     }
 }

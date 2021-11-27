@@ -1,0 +1,120 @@
+.leavingContainer {
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    border-bottom: solid 5px var(--color4);
+    margin-bottom: 5rem;
+    width: fit-content;
+}
+
+.text h1 {
+    font-family: 'PhageRegular', sans-serif;
+    font-size: 7rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    color: var(--color4);
+    position: relative;
+    padding-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.tel,
+.telNetflix,
+.telHulu,
+.telPrime,
+.telHBO {
+    font-family: 'PhageRegular',
+        sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: .01px;
+    -webkit-text-stroke-color: var(--color4);
+    padding-right: .5rem;
+    letter-spacing: .5rem;
+}
+
+.telNetflix {
+  -webkit-text-stroke-color: var(--netflix);
+}
+
+.telHulu {
+      -webkit-text-stroke-color: var(--hulu);
+
+}
+
+.telPrime {
+    -webkit-text-stroke-color: var(--amazon);
+}
+
+.telHBO {
+   -webkit-text-stroke-color: var(--hbo);
+   white-space: nowrap;
+}
+
+.leavingList {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 10rem;
+}
+
+.leavingListItem {
+    padding-bottom: 5rem;
+    width: 100%;
+}
+
+.leavingListItem h2 {
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .text h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .tel,
+    .telNetflix,
+    .telHulu,
+    .telPrime,
+    .telHBO {
+        -webkit-text-stroke-width: 1px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .leavingList {
+        flex-direction: column;
+        justify-content:center;
+        align-items:center
+    }
+
+    .telHulu,
+    .telNetflix,
+    .telPrime, 
+    .telHBO {
+        text-align: center;
+    }
+
+    .leavingListItem p {
+        text-align: center;
+    }
+
+    .leavingList { 
+        gap: 5em
+    }
+
+    .leavingListItem {
+        padding-bottom: 0rem;
+    }
+
+    .hulucontent {
+        padding-bottom: 10rem;
+    }
+}

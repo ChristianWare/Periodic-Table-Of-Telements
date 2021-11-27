@@ -1,7 +1,6 @@
 import styles from "../../styles/HBO.module.css";
 
 function HBO({ hbo }) {
-  console.log(hbo);
   return (
     <div className={styles.row4Container}>
       <div className={styles.content}>

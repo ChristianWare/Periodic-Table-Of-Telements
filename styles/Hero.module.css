@@ -38,7 +38,7 @@
     display: flex;
     align-items: space-between;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 4.5rem;
 }
 
 .keyContainer h4 {
@@ -48,7 +48,7 @@
 }
 
 .keyContainer h4:hover:not(:nth-child(1)) {
-    transform: scale(3, 3);
+    transform: scale(2.75, 2.75);
     transition: all 0.1s ease-in;
 }
 
