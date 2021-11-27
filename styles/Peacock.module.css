@@ -1,13 +1,17 @@
 .peacockContainer {
    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 2rem;
    padding-bottom: 20rem;
+   /* gap: 5rem; */
 }
 
 .content {
      cursor: pointer;
      display: flex;
      flex-direction: column;
-     align-items: flex-start;
+     align-items: center;
      justify-content: center;
 }
 
@@ -97,7 +101,33 @@
     text-align: center;
 }
 
+.arrowContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20rem;
+    padding-left: 20rem;
+}
+
+.arrow {
+    font-size: 15rem;
+    margin: -10rem;
+    color: var(--peacock);
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.arrow:hover {
+    color: var(--color1);
+    transition: all 0.1s ease-in;
+}
+
 @media screen and (max-width: 670px) {
+    .peacockContainer {
+        flex-direction: column;
+    }
+    
     .content {
         justify-content: center;
         align-items: center;
@@ -116,8 +146,19 @@
 
 @media screen and (max-width: 981px) {
     .peacockContainer {
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .arrowContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20rem;
+        /* padding-left: 0rem; */
+        padding-top: 5rem;
     }
     
     .text h1 {

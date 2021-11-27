@@ -11,6 +11,7 @@ function Hero() {
         </span>
       </h1>
       <div className={styles.keyContainer}>
+        <h4>KEY:</h4>
         <h4>Prime</h4>
         <h4>Hulu</h4>
         <h4>Netflix</h4>

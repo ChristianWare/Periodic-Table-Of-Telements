@@ -1,4 +1,5 @@
-import styles from '../../styles/Peacock.module.css'
+import styles from "../../styles/Peacock.module.css";
+import { RiArrowDownSLine } from "react-icons/ri";
 
 function Peacock({ peacock }) {
   return (
@@ -28,7 +29,13 @@ function Peacock({ peacock }) {
           </div>
         </div>
       </div>
-
+      <div className={styles.arrowContainer}>
+        <RiArrowDownSLine className={styles.arrow} />
+        <RiArrowDownSLine className={styles.arrow} />
+        <RiArrowDownSLine className={styles.arrow} />
+        <RiArrowDownSLine className={styles.arrow} />
+        <RiArrowDownSLine className={styles.arrow} />
+      </div>
     </div>
   );
 }

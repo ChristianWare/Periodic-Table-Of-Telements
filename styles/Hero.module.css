@@ -38,7 +38,7 @@
     display: flex;
     align-items: space-between;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .keyContainer h4 {
@@ -47,31 +47,39 @@
     transition: all 0.1s ease-in;
 }
 
-.keyContainer h4:hover {
+.keyContainer h4:hover:not(:nth-child(1)) {
     transform: scale(3, 3);
-    /* background-color: var(--color1); */
     transition: all 0.1s ease-in;
 }
 
-.keyContainer h4:nth-child(1) {
+.keyContainer h4:nth-child(2) {
     color: var(--amazon);
 }
 
-.keyContainer h4:nth-child(2) {
+.keyContainer h4:nth-child(3) {
     color: var(--hulu);
 }
 
-.keyContainer h4:nth-child(3) {
+.keyContainer h4:nth-child(4) {
     color: var(--netflix);
 }
-.keyContainer h4:nth-child(4) {
+.keyContainer h4:nth-child(5) {
     color: var(--hbo);
+    white-space:nowrap
 }
 
 @media screen and (max-width: 480px) {
     .heroContainer h1 {
         font-size: 4rem;
         line-height: 1.2;
+    }
+    .keyContainer {
+        gap: .01rem;
+    }
+
+    .keyContainer h4:hover {
+        transform: scale(1.8, 1.8);
+        transition: all 0.1s ease-in;
     }
 
     .tel {
