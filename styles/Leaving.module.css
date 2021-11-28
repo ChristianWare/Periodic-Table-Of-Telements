@@ -56,11 +56,15 @@
    white-space: nowrap;
 }
 
+
+
 .leavingList {
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    gap: 10rem;
+    justify-content:center;
+    width: 100%;
+    gap: 5rem;
+    padding-left: 4rem;
 }
 
 .leavingListItem {
@@ -70,6 +74,28 @@
 
 .leavingListItem h2 {
     font-size: 5rem;
+}
+
+.netflixContent,
+.primeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.lines {
+    background-color: var(--color1);
+    height: 10rem;
+    width: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        var(--color4),
+        var(--color4) 15px,
+        var(--color1) 15px,
+        var(--color1) 20px,
+        transparent 40px
+    );
 }
 
 @media screen and (max-width: 480px) {
@@ -89,11 +115,14 @@
 }
 
 @media screen and (max-width: 768px) {
-    .leavingList {
+    .leavingList,
+    .primeContent,
+    .netflixContent {
         flex-direction: column;
         justify-content:center;
         align-items:center
     }
+
 
     .telHulu,
     .telNetflix,
@@ -106,15 +135,19 @@
         text-align: center;
     }
 
-    .leavingList { 
+    /* .leavingList { 
         gap: 5em
-    }
+    } */
 
     .leavingListItem {
         padding-bottom: 0rem;
     }
 
     .hulucontent {
-        padding-bottom: 10rem;
+        padding-bottom: 6rem;
+    }
+
+    .lines {
+        margin-top: 5rem;
     }
 }
