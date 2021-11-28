@@ -1,11 +1,14 @@
-import styles from '../styles/About.module.css'
+import styles from "../styles/About.module.css";
+import Layout from "../src/components/Layout";
 
 function about() {
-    return (
-        <div className={styles.aboutContainer}>
-            <h1>About Page</h1>            
-        </div>
-    )
+  return (
+    <Layout title='About Telements'>
+      <div className={styles.aboutContainer}>
+        <h1>About Page</h1>
+      </div>
+    </Layout>
+  );
 }
 
-export default about
+export default about;
