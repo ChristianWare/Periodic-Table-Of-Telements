@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 function Layout({ title, keywords, description, children }) {
@@ -11,6 +12,7 @@ function Layout({ title, keywords, description, children }) {
       </Head>
       <Navbar />
       <div>{children}</div>
+      <Footer />
     </div>
   );
 }
@@ -19,7 +21,7 @@ Layout.defaultprops = {
   title:
     "Periodic Table of Telements | One stop shop for all of your streaming needs",
   description:
-    "Find the latest movies and series from netflix, hulu, hbo, and more!",
+    "Find the latest movies and series from netflix, hulu, hbo max, and more!",
   keywords: "Netflix, Hulu, Prime, Hbo Max, Disney, Paramount, Peacock",
 };
 
