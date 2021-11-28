@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../../styles/Layout.module.css";
+import Navbar from "./Navbar";
 
 function Layout({ title, keywords, description, children }) {
   return (
@@ -9,7 +9,8 @@ function Layout({ title, keywords, description, children }) {
         <meta name='description' content={description} />
         <meta name='keywords' content={keywords} />
       </Head>
-      <div className={styles.container}>{children}</div>
+      <Navbar />
+      <div>{children}</div>
     </div>
   );
 }

@@ -7,16 +7,16 @@ function Netflix({ netflix, netflix2 }) {
         {netflix.results.map((n) => (
           <div key={n.title} className={styles.box1}>
             <div className={styles.elementDetails}>
-              <h2 className={styles.elementSymbol}>{n.title.slice(0, 2)}</h2>
-              <p className={styles.elementname}>{n.title}</p>
+              <h2 className={styles.elementSymbol}>{n.title.slice(1, 3)}</h2>
+              <p className={styles.elementname}>{n.title.slice(0, 12)}</p>
             </div>
           </div>
         ))}
         {netflix2.results.map((n2) => (
           <div key={n2.title} className={styles.box1}>
             <div className={styles.elementDetails}>
-              <h2 className={styles.elementSymbol}>{n2.title.slice(0, 2)}</h2>
-              <p className={styles.elementname}>{n2.title}</p>
+              <h2 className={styles.elementSymbol}>{n2.title.slice(2, 4)}</h2>
+              <p className={styles.elementname}>{n2.title.slice(0, 12)}</p>
             </div>
           </div>
         ))}

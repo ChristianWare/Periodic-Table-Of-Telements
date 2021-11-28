@@ -15,7 +15,7 @@ function Disney({ disney }) {
             <div key={d.title} className={styles.box1}>
               <div className={styles.elementDetails}>
                 <h2 className={styles.elementSymbol}>{d.title.slice(0, 2)}</h2>
-                <p className={styles.elementname}>{d.title}</p>
+                <p className={styles.elementname}>{d.title.slice(0, 12)}</p>
               </div>
             </div>
           ))}
@@ -23,7 +23,7 @@ function Disney({ disney }) {
             <div key={d.title} className={styles.box1}>
               <div className={styles.elementDetails}>
                 <h2 className={styles.elementSymbol}>{d.title.slice(4, 6)}</h2>
-                <p className={styles.elementname}>{d.title}</p>
+                <p className={styles.elementname}>{d.title.slice(0, 12)}</p>
               </div>
             </div>
           ))}

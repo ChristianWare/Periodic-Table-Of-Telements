@@ -10,7 +10,7 @@ function Paramount({ para }) {
             <div key={p.title} className={styles.box1}>
               <div className={styles.elementDetails}>
                 <h2 className={styles.elementSymbol}>{p.title.slice(1, 3)}</h2>
-                <p className={styles.elementname}>{p.title}</p>
+                <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
               </div>
             </div>
           ))}
@@ -18,7 +18,7 @@ function Paramount({ para }) {
             <div key={p.title} className={styles.box1}>
               <div className={styles.elementDetails}>
                 <h2 className={styles.elementSymbol}>{p.title.slice(1, 3)}</h2>
-                <p className={styles.elementname}>{p.title}</p>
+                <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
               </div>
             </div>
           ))}
