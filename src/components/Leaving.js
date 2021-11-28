@@ -13,7 +13,7 @@ function Leaving({ nfLeaving, huluLeaving, primeLeaving, hboLeaving }) {
           <div className={styles.netflixContent}>
             <h2 className={styles.telNetflix}>NETFLIX</h2>
             {nfLeaving.results.slice(0, 10).map((n) => (
-              <p>{n.title.slice(0, 30)}</p>
+              <p key={n.title}>{n.title.slice(0, 30)}</p>
             ))}
           </div>
         </div>
@@ -22,7 +22,7 @@ function Leaving({ nfLeaving, huluLeaving, primeLeaving, hboLeaving }) {
           <div className={styles.hulucontent}>
             <h2 className={styles.telHulu}>HULU</h2>
             {huluLeaving.results.slice(10, 20).map((h) => (
-              <p>{h.title.slice(0, 30)}</p>
+              <p key={h.title}>{h.title.slice(0, 30)}</p>
             ))}
           </div>
         </div>
@@ -32,7 +32,7 @@ function Leaving({ nfLeaving, huluLeaving, primeLeaving, hboLeaving }) {
           <div className={styles.primeContent}>
             <h2 className={styles.telPrime}>PRIME</h2>
             {primeLeaving.results.slice(0, 10).map((p) => (
-              <p>{p.title.slice(0, 30)}</p>
+              <p key={p.title}>{p.title.slice(0, 30)}</p>
             ))}
           </div>
         </div>
@@ -40,7 +40,7 @@ function Leaving({ nfLeaving, huluLeaving, primeLeaving, hboLeaving }) {
         <div className={styles.leavingListItem}>
           <h2 className={styles.telHBO}>HBO MAX</h2>
           {hboLeaving.results.slice(18, 28).map((hb) => (
-            <p>{hb.title.slice(0, 30)}</p>
+            <p key={hb.title}>{hb.title.slice(0, 30)}</p>
           ))}
         </div>
       </div>

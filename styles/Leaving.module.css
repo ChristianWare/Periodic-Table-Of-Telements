@@ -56,8 +56,6 @@
    white-space: nowrap;
 }
 
-
-
 .leavingList {
     display: flex;
     align-items: center;
@@ -81,7 +79,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    /* justify-content: flex-end; */
     width: 100%;
+}
+
+.netflixContent h2,
+.primeContent h2 {
+    margin-right: -.5rem;
 }
 
 .lines {
@@ -135,9 +139,9 @@
         text-align: center;
     }
 
-    /* .leavingList { 
-        gap: 5em
-    } */
+.leavingList {
+    padding-left: 0rem;
+}
 
     .leavingListItem {
         padding-bottom: 0rem;
