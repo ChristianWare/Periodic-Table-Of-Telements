@@ -29,7 +29,7 @@ export default function Home({
   hboLeaving,
 }) {
   return (
-    <div className={styles.container}>
+    <>
       <Layout>
         <Hero />
         <Row1 />
@@ -48,7 +48,7 @@ export default function Home({
           hboLeaving={hboLeaving}
         />
       </Layout>
-    </div>
+    </>
   );
 }
 

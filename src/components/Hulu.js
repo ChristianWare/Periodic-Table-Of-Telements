@@ -7,7 +7,7 @@ function Hulu({ hulu }) {
         <div className={styles.box1}>
           {hulu.results.slice(0, 2).map((h) => (
             <div key={h.title} className={styles.elementDetails}>
-              <h2 className={styles.elementSymbol}>{h.title.slice(11, 13)}</h2>
+              <h2 className={styles.elementSymbol}>{h.title.slice(1, 3)}</h2>
               <p className={styles.elementname}>{h.title.slice(0, 12)}</p>
             </div>
           ))}

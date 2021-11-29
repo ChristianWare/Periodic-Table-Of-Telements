@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import styles from '../../styles/Layout.module.css'
 
 function Layout({ title, keywords, description, children }) {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>{title}</title>
         <meta name='description' content={description} />
