@@ -29,9 +29,9 @@ function Peacock({ peacockMovies }) {
               <Link href={`/movies/${p.id}`}>
                 <div key={p.title} className={styles.elementDetails}>
                   <h2 className={styles.elementSymbol}>
-                    {p.title.slice(0, 2)}
+                    {p.title.slice(3, 5)}
                   </h2>
-                  <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
+                  <p className={styles.elementname}>{p.title.slice(0, 11)}</p>
                 </div>
               </Link>
             ))}
@@ -41,7 +41,7 @@ function Peacock({ peacockMovies }) {
               <Link href={`/movies/${p.id}`}>
                 <div key={p.title} className={styles.elementDetails}>
                   <h2 className={styles.elementSymbol}>
-                    {p.title.slice(0, 2)}
+                    {p.title.slice(1, 3)}
                   </h2>
                   <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
                 </div>

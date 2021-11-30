@@ -37,7 +37,12 @@ export default function Home({
         <Disney disneyMovies={disneyMovies} />
         <Paramount paraMovies={paraMovies} />
         <Peacock peacockMovies={peacockMovies} />
-        {/* <Leaving /> */}
+        <Leaving
+          peacockMovies={peacockMovies}
+          paraMovies={paraMovies}
+          disneyMovies={disneyMovies}
+          netflixMovies2={netflixMovies2}
+        />
       </Layout>
     </>
   );

@@ -1,5 +1,5 @@
 .leavingContainer {
-    padding-top: 20rem;
+    padding-top: 10rem;
     padding-bottom: 20rem;
     display: flex;
     flex-direction: column;
@@ -119,6 +119,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .leavingContainer {
+        padding-top: 20rem;
+    }
+    
     .leavingList,
     .primeContent,
     .netflixContent {
