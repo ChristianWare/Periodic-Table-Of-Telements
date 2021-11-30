@@ -38,6 +38,11 @@
 
 .navItem {
     margin-left: 3rem;
+    transition: all 0.1s ease;
+}
+
+.navItem:hover {
+    color: var(--amazon);
 }
 
 .navItem a {
@@ -48,6 +53,10 @@
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.navitem a:hover {
+    transform: scale(2.5, 2.5);
 }
 
 .navItem a::before {

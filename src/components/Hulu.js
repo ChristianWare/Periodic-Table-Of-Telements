@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Hulu({ huluMovies }) {
   return (
-    <div className={styles.row2Container}>
+    <div className={styles.row2Container} id='hulu'>
       <div className={styles.content}>
         <div className={styles.box1}>
           {huluMovies.slice(0, 2).map((h) => (

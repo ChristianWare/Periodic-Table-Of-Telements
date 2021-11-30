@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Netflix({ netflixMovies, netflixMovies2 }) {
   return (
-    <div className={styles.row4Container}>
+    <div className={styles.row4Container} id='netflix'>
       <div className={styles.content}>
         {netflixMovies.map((n) => (
           <div key={n.title} className={styles.box1}>

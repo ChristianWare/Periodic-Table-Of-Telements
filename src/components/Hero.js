@@ -13,9 +13,15 @@ function Hero() {
       </h1>
       <div className={styles.keyContainer}>
         <h4>KEY:</h4>
-        <h4>Prime</h4>
-        <h4>Hulu</h4>
-        <h4>Netflix</h4>
+        <Link href='#prime'>
+          <h4>Prime</h4>
+        </Link>
+        <Link href='#hulu'>
+          <h4>Hulu</h4>
+        </Link>
+        <Link href='#netflix'>
+          <h4>Netflix</h4>
+        </Link>
         <Link href='#hbo'>
           <h4>Hbo Max</h4>
         </Link>

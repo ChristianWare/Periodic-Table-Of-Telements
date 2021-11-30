@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Prime({ huluMovies }) {
   return (
-    <div className={styles.primeContainer}>
+    <div className={styles.primeContainer} id='prime'>
       <div className={styles.content}>
         <div className={styles.box1}>
           {huluMovies.slice(7, 9).map((p) => (
