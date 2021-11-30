@@ -1,24 +1,29 @@
 import styles from "../../styles/Prime.module.css";
+import Link from 'next/link'
 
-function Prime({ prime }) {
+function Prime({ huluMovies }) {
   return (
     <div className={styles.primeContainer}>
       <div className={styles.content}>
         <div className={styles.box1}>
-          {prime.results.slice(2, 4).map((p) => (
-            <div key={p.title} className={styles.elementDetails}>
-              <h2 className={styles.elementSymbol}>{p.title.slice(3, 5)}</h2>
-              <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
-            </div>
+          {huluMovies.slice(7, 9).map((p) => (
+            <Link href={`/movies/${p.id}`}>
+              <div key={p.title} className={styles.elementDetails}>
+                <h2 className={styles.elementSymbol}>{p.title.slice(3, 5)}</h2>
+                <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
+              </div>
+            </Link>
           ))}
         </div>
 
         <div className={styles.box2}>
-          {prime.results.slice(2, 8).map((p) => (
-            <div key={p.title} className={styles.elementDetails}>
-              <h2 className={styles.elementSymbol}>{p.title.slice(4, 6)}</h2>
-              <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
-            </div>
+          {huluMovies.slice(3, 9).map((p) => (
+            <Link href={`/movies/${p.id}`}>
+              <div key={p.title} className={styles.elementDetails}>
+                <h2 className={styles.elementSymbol}>{p.title.slice(4, 6)}</h2>
+                <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

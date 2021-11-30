@@ -26,8 +26,8 @@ export default function Home({
         <Hero />
         <Row1 />
         <Hulu huluMovies={huluMovies} />
-        {/* <Prime />
-        <Netflix />
+        <Prime huluMovies={huluMovies} />
+        {/* <Netflix />
         <Row8 />
         <HBO />
         <Disney />
