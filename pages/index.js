@@ -21,6 +21,7 @@ export default function Home({
   disneyMovies,
   paraMovies,
 }) {
+
   return (
     <>
       <Layout>
@@ -34,8 +35,8 @@ export default function Home({
         />
         <HBO hboShows={hboShows} />
         <Disney disneyMovies={disneyMovies} />
-        {/* <Paramount />
-        <Peacock />
+        <Paramount paraMovies={paraMovies} />
+        {/* <Peacock />
         <Leaving /> */}
       </Layout>
     </>

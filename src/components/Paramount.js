@@ -1,25 +1,34 @@
 import styles from '../../styles/Paramount.module.css'
 import { RiArrowLeftDownLine } from 'react-icons/ri'
+import Link from 'next/link'
 
-function Paramount({ para }) {
+function Paramount({ paraMovies }) {
   return (
     <>
       <div className={styles.paramountContainer}>
         <div className={styles.content}>
-          {para.results.map((p) => (
+          {paraMovies.map((p) => (
             <div key={p.title} className={styles.box1}>
-              <div className={styles.elementDetails}>
-                <h2 className={styles.elementSymbol}>{p.title.slice(1, 3)}</h2>
-                <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
-              </div>
+              <Link href={`/movies/${p.id}`}>
+                <div className={styles.elementDetails}>
+                  <h2 className={styles.elementSymbol}>
+                    {p.title.slice(1, 3)}
+                  </h2>
+                  <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
+                </div>
+              </Link>
             </div>
           ))}
-          {para.results.map((p) => (
+          {paraMovies.map((p) => (
             <div key={p.title} className={styles.box1}>
-              <div className={styles.elementDetails}>
-                <h2 className={styles.elementSymbol}>{p.title.slice(1, 3)}</h2>
-                <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
-              </div>
+              <Link href={`/movies/${p.id}`}>
+                <div className={styles.elementDetails}>
+                  <h2 className={styles.elementSymbol}>
+                    {p.title.slice(1, 3)}
+                  </h2>
+                  <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>
