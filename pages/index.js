@@ -33,8 +33,8 @@ export default function Home({
           netflixMovies2={netflixMovies2}
         />
         <HBO hboShows={hboShows} />
-        {/* <Disney />
-        <Paramount />
+        <Disney disneyMovies={disneyMovies} />
+        {/* <Paramount />
         <Peacock />
         <Leaving /> */}
       </Layout>

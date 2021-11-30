@@ -1,7 +1,8 @@
 import styles from "../../styles/Disney.module.css";
 import { RiArrowRightDownLine } from "react-icons/ri";
+import Link from 'next/link'
 
-function Disney({ disney }) {
+function Disney({ disneyMovies }) {
   return (
     <>
       <div className={styles.disneyContainer}>
@@ -11,20 +12,28 @@ function Disney({ disney }) {
           </h1>
         </div>
         <div className={styles.content}>
-          {disney.results.map((d) => (
+          {disneyMovies.map((d) => (
             <div key={d.title} className={styles.box1}>
-              <div className={styles.elementDetails}>
-                <h2 className={styles.elementSymbol}>{d.title.slice(0, 2)}</h2>
-                <p className={styles.elementname}>{d.title.slice(0, 12)}</p>
-              </div>
+              <Link href={`/movies/${d.id}`}>
+                <div className={styles.elementDetails}>
+                  <h2 className={styles.elementSymbol}>
+                    {d.title.slice(0, 2)}
+                  </h2>
+                  <p className={styles.elementname}>{d.title.slice(0, 12)}</p>
+                </div>
+              </Link>
             </div>
           ))}
-          {disney.results.map((d) => (
+          {disneyMovies.map((d) => (
             <div key={d.title} className={styles.box1}>
-              <div className={styles.elementDetails}>
-                <h2 className={styles.elementSymbol}>{d.title.slice(4, 6)}</h2>
-                <p className={styles.elementname}>{d.title.slice(0, 12)}</p>
-              </div>
+              <Link href={`/movies/${d.id}`}>
+                <div className={styles.elementDetails}>
+                  <h2 className={styles.elementSymbol}>
+                    {d.title.slice(0, 2)}
+                  </h2>
+                  <p className={styles.elementname}>{d.title.slice(0, 12)}</p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

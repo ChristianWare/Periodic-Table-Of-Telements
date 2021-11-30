@@ -25,16 +25,6 @@ function Netflix({ netflixMovies, netflixMovies2 }) {
             </Link>
           </div>
         ))}
-        {/* {netflixMovies.slice(1, 15).map((n2) => (
-          <div key={n2.title} className={styles.box1}>
-            <Link href={`/movies/${n2.id}`}>
-              <div className={styles.elementDetails}>
-                <h2 className={styles.elementSymbol}>{n2.title.slice(2, 4)}</h2>
-                <p className={styles.elementname}>{n2.title.slice(0, 12)}</p>
-              </div>
-            </Link>
-          </div>
-        ))} */}
       </div>
     </div>
   );
