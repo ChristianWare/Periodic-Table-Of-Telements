@@ -1,16 +1,26 @@
 import Layout from "../../src/components/Layout";
-import Image from 'next/image'
 import Movie from "../../src/components/Movie";
-
-const BASE_URL = 'https://image.tmdb.org/t/p/w500';
+import styles from "../../styles/MovieDetailsPage.module.css";
 
 function MovieDetailsPage({ result }) {
   console.log(result);
   return (
     <Layout>
-      <div>
-        <Movie title={result.title} poster_path={result.poster_path} />
-        <p>{result.overview}</p>
+      <div className={styles.mdPageContainer}>
+        {/* <div className={styles.lines}></div> */}
+        <div className={styles.left}>
+          <Movie title={result.title} poster_path={result.poster_path} />
+        </div>
+        <div className={styles.right}>
+          <div className={styles.lines}></div>
+          <h1>{result.title}</h1>
+          <div className={styles.lines}></div>
+          <h2>Overview:</h2>
+          <p>{result.overview}</p>
+          <br />
+          <h2>Runtime:</h2>
+          <p>{result.runtime} Minutes</p>
+        </div>
       </div>
     </Layout>
   );
@@ -23,13 +33,10 @@ export async function getServerSideProps(context) {
   const request = await fetch(
     `https://api.themoviedb.org/3/movie/${slug}?api_key=${process.env.TMDB_API_KEY}&language=en-US`
   ).then((response) => response.json());
-  
+
   return {
     props: {
       result: request,
     },
   };
 }
-
-
-

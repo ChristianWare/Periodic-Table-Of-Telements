@@ -5,7 +5,7 @@ import Link from 'next/link'
 function Paramount({ paraMovies }) {
   return (
     <>
-      <div className={styles.paramountContainer}>
+      <div className={styles.paramountContainer} id='paramount'>
         <div className={styles.content}>
           {paraMovies.map((p) => (
             <div key={p.title} className={styles.box1}>

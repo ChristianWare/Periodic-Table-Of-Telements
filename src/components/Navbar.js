@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link'
 import styles from '../../styles/Navbar.module.css'
-import { BsBellFill } from 'react-icons/bs'
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -39,22 +38,22 @@ function Navbar() {
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href='#specials'>
+              <Link href={"/" + "#disney"}>
                 <a onClick={openMenu}>Disney</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href='#menu'>
+              <Link href={"/" + "#paramount"}>
                 <a onClick={openMenu}>Paramount</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href='#socials'>
+              <Link href={"/" + "#peacock"}>
                 <a onClick={openMenu}>Peacock</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href='#newsletter'>
+              <Link href={"/" + "#leaving"}>
                 <a onClick={openMenu}>Leaving</a>
               </Link>
             </li>

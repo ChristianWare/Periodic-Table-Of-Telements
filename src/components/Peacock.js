@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function Peacock({ peacockMovies }) {
   return (
-    <div className={styles.peacockContainer}>
+    <div className={styles.peacockContainer} id='peacock'>
       <div className={styles.content}>
         <div className={styles.text}>
           <h1>

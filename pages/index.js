@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
 import Row1 from "../src/components/Row1";
 import Hulu from "../src/components/Hulu";
 import Prime from "../src/components/Prime";
 import Netflix from "../src/components/Netflix";
-import Row8 from "../src/components/Row8";
 import HBO from "../src/components/HBO";
 import Hero from "../src/components/Hero";
 import Disney from "../src/components/Disney";
@@ -14,7 +12,6 @@ import Layout from "../src/components/Layout";
 
 export default function Home({
   huluMovies,
-  primeShows,
   netflixMovies,
   netflixMovies2,
   hboShows,
@@ -48,10 +45,9 @@ export default function Home({
   );
 }
 
-export async function getServerSideProps(contenxt) {
+export async function getServerSideProps() {
   const [
     huluMoviesRes,
-    primeShowsRes,
     netflixMoviesRes,
     netflixMovies2Res,
     hboShowsRes,
@@ -61,9 +57,6 @@ export async function getServerSideProps(contenxt) {
   ] = await Promise.all([
     fetch(
       `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=1`
-    ),
-    fetch(
-      `https://api.themoviedb.org/3/tv/popular?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=2`
     ),
     fetch(
       `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=3`
@@ -90,7 +83,6 @@ export async function getServerSideProps(contenxt) {
 
   const [
     huluMovies,
-    primeShows,
     netflixMovies,
     netflixMovies2,
     hboShows,
@@ -99,7 +91,6 @@ export async function getServerSideProps(contenxt) {
     peacockMovies,
   ] = await Promise.all([
     huluMoviesRes.json(),
-    primeShowsRes.json(),
     netflixMoviesRes.json(),
     netflixMovies2Res.json(),
     hboShowsRes.json(),
@@ -111,7 +102,6 @@ export async function getServerSideProps(contenxt) {
   return {
     props: {
       huluMovies: huluMovies.results,
-      primeShows: primeShows.results,
       netflixMovies: netflixMovies.results,
       netflixMovies2: netflixMovies2.results,
       hboShows: hboShows.results,

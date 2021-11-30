@@ -5,7 +5,7 @@ import Link from 'next/link'
 function Disney({ disneyMovies }) {
   return (
     <>
-      <div className={styles.disneyContainer}>
+      <div className={styles.disneyContainer} id='disney'>
         <div className={styles.text}>
           <h1>
             DISNEY <br /> <span className={styles.tel}>TELE</span>MENTS

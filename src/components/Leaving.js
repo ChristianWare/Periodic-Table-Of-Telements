@@ -4,7 +4,7 @@ function Leaving({ peacockMovies, disneyMovies, paraMovies, netflixMovies2 }) {
   return (
     <div className={styles.leavingContainer}>
       <div className={styles.text}>
-        <h1>
+        <h1 id='leaving'>
           <span className={styles.tel}>TELE</span>MENTS <br /> LEAVING SOON:
         </h1>
       </div>

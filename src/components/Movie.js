@@ -4,13 +4,10 @@ function Movie({ title, index, poster_path }) {
 
   return (
     <div key={index}>
-      <h1>{title}</h1>
       <Image
         src={IMAGES_API + poster_path}
-        width={500}
-        height={750}
-        // layout='fill'
-        objectFit='cover'
+        width={360}
+        height={535}
         alt={title}
       />
     </div>

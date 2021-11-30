@@ -1,4 +1,5 @@
 import styles from "../../styles/Hero.module.css";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -15,7 +16,9 @@ function Hero() {
         <h4>Prime</h4>
         <h4>Hulu</h4>
         <h4>Netflix</h4>
-        <h4>Hbo Max</h4>
+        <Link href='#hbo'>
+          <h4>Hbo Max</h4>
+        </Link>
       </div>
     </div>
   );
