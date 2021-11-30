@@ -16,19 +16,25 @@ export default function Home({
   huluMovies,
   primeShows,
   netflixMovies,
+  netflixMovies2,
   hboShows,
   disneyMovies,
   paraMovies,
 }) {
+
+  console.log(primeShows);
   return (
     <>
       <Layout>
         <Hero />
-        <Row1 />
+        <Row1 huluMovies={huluMovies} />
         <Hulu huluMovies={huluMovies} />
         <Prime huluMovies={huluMovies} />
-        {/* <Netflix />
-        <Row8 />
+        <Netflix
+          netflixMovies={netflixMovies}
+          netflixMovies2={netflixMovies2}
+        />
+        {/* <Row8 />
         <HBO />
         <Disney />
         <Paramount />
@@ -44,6 +50,7 @@ export async function getServerSideProps(contenxt) {
     huluMoviesRes,
     primeShowsRes,
     netflixMoviesRes,
+    netflixMovies2Res,
     hboShowsRes,
     disneyMoviesRes,
     paraMoviesRes,
@@ -52,13 +59,16 @@ export async function getServerSideProps(contenxt) {
       `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=1`
     ),
     fetch(
-      `https://api.themoviedb.org/3/tv/popular?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=1`
+      `https://api.themoviedb.org/3/tv/popular?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=2`
     ),
     fetch(
-      `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=1`
+      `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=3`
     ),
     fetch(
-      `https://api.themoviedb.org/3/tv/top_rated?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=1`
+      `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=4`
+    ),
+    fetch(
+      `https://api.themoviedb.org/3/tv/top_rated?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=4`
     ),
     fetch(
       `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.TMDB_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=3&with_companies=disney&with_watch_monetization_types=flatrate
@@ -74,6 +84,7 @@ export async function getServerSideProps(contenxt) {
     huluMovies,
     primeShows,
     netflixMovies,
+    netflixMovies2,
     hboShows,
     disneyMovies,
     paraMovies,
@@ -81,6 +92,7 @@ export async function getServerSideProps(contenxt) {
     huluMoviesRes.json(),
     primeShowsRes.json(),
     netflixMoviesRes.json(),
+    netflixMovies2Res.json(),
     hboShowsRes.json(),
     disneyMoviesRes.json(),
     paraMoviesRes.json(),
@@ -91,6 +103,7 @@ export async function getServerSideProps(contenxt) {
       huluMovies: huluMovies.results,
       primeShows: primeShows.results,
       netflixMovies: netflixMovies.results,
+      netflixMovies2: netflixMovies2.results,
       hboShows: hboShows.results,
       disneyMovies: disneyMovies.results,
       paraMovies: paraMovies.results,
