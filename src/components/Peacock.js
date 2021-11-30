@@ -1,7 +1,8 @@
 import styles from "../../styles/Peacock.module.css";
 import { RiArrowDownSLine } from "react-icons/ri";
+import Link from 'next/link'
 
-function Peacock({ peacock }) {
+function Peacock({ peacockMovies }) {
   return (
     <div className={styles.peacockContainer}>
       <div className={styles.content}>
@@ -12,19 +13,39 @@ function Peacock({ peacock }) {
         </div>
         <div className={styles.content}>
           <div className={styles.box1}>
-            {peacock.results.map((p) => (
-              <div key={p.title} className={styles.elementDetails}>
-                <h2 className={styles.elementSymbol}>{p.title.slice(2, 4)}</h2>
-                <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
-              </div>
+            {peacockMovies.slice(0, 10).map((p) => (
+              <Link href={`/movies/${p.id}`}>
+                <div key={p.title} className={styles.elementDetails}>
+                  <h2 className={styles.elementSymbol}>
+                    {p.title.slice(0, 2)}
+                  </h2>
+                  <p className={styles.elementname}>{p.title.slice(0, 11)}</p>
+                </div>
+              </Link>
             ))}
           </div>
           <div className={styles.box2}>
-            {peacock.results.map((p) => (
-              <div key={p.title} className={styles.elementDetails}>
-                <h2 className={styles.elementSymbol}>{p.title.slice(3, 5)}</h2>
-                <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
-              </div>
+            {peacockMovies.slice(0, 10).map((p) => (
+              <Link href={`/movies/${p.id}`}>
+                <div key={p.title} className={styles.elementDetails}>
+                  <h2 className={styles.elementSymbol}>
+                    {p.title.slice(0, 2)}
+                  </h2>
+                  <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className={styles.box2}>
+            {peacockMovies.slice(0, 10).map((p) => (
+              <Link href={`/movies/${p.id}`}>
+                <div key={p.title} className={styles.elementDetails}>
+                  <h2 className={styles.elementSymbol}>
+                    {p.title.slice(0, 2)}
+                  </h2>
+                  <p className={styles.elementname}>{p.title.slice(0, 12)}</p>
+                </div>
+              </Link>
             ))}
           </div>
         </div>

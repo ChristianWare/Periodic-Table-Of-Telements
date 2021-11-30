@@ -20,8 +20,8 @@ export default function Home({
   hboShows,
   disneyMovies,
   paraMovies,
+  peacockMovies,
 }) {
-
   return (
     <>
       <Layout>
@@ -36,8 +36,8 @@ export default function Home({
         <HBO hboShows={hboShows} />
         <Disney disneyMovies={disneyMovies} />
         <Paramount paraMovies={paraMovies} />
-        {/* <Peacock />
-        <Leaving /> */}
+        <Peacock peacockMovies={peacockMovies} />
+        {/* <Leaving /> */}
       </Layout>
     </>
   );
@@ -52,6 +52,7 @@ export async function getServerSideProps(contenxt) {
     hboShowsRes,
     disneyMoviesRes,
     paraMoviesRes,
+    peacockMoviesRes,
   ] = await Promise.all([
     fetch(
       `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=1`
@@ -76,6 +77,10 @@ export async function getServerSideProps(contenxt) {
       `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.TMDB_API_KEY}&language=en-US&sort_by=revenue.desc&include_adult=false&include_video=false&page=4&with_companies=disney&with_watch_monetization_types=flatrate
 `
     ),
+    fetch(
+      `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.TMDB_API_KEY}&language=en-US&sort_by=revenue.desc&include_adult=false&include_video=false&page=5&with_companies=disney&with_watch_monetization_types=flatrate
+`
+    ),
   ]);
 
   const [
@@ -86,6 +91,7 @@ export async function getServerSideProps(contenxt) {
     hboShows,
     disneyMovies,
     paraMovies,
+    peacockMovies,
   ] = await Promise.all([
     huluMoviesRes.json(),
     primeShowsRes.json(),
@@ -94,6 +100,7 @@ export async function getServerSideProps(contenxt) {
     hboShowsRes.json(),
     disneyMoviesRes.json(),
     paraMoviesRes.json(),
+    peacockMoviesRes.json(),
   ]);
 
   return {
@@ -105,6 +112,7 @@ export async function getServerSideProps(contenxt) {
       hboShows: hboShows.results,
       disneyMovies: disneyMovies.results,
       paraMovies: paraMovies.results,
+      peacockMovies: peacockMovies.results,
     },
   };
 }
