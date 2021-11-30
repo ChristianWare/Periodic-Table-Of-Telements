@@ -6,8 +6,9 @@ function Movie({ title, index, poster_path }) {
     <div key={index}>
       <Image
         src={IMAGES_API + poster_path}
-        width={360}
-        height={535}
+        width={390}
+        height={565}
+        // objectFit='cover'
         alt={title}
       />
     </div>

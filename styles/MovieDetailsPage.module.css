@@ -2,16 +2,38 @@
     padding-top: 8rem;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     gap: 5rem;
+    z-index: 1;
+    width: 100%;
+    max-width: 1350px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 568px) {
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
 
 .left {
     flex: 1;
 }
 
+.imgContainer {
+    border: 5px solid;
+}
+
 .right {
-    flex: 2
+    flex: 2;
+    width: 100%;
 }
 
 .right{
@@ -30,8 +52,6 @@
     color: transparent;
     -webkit-text-stroke-width: .01px;
     -webkit-text-stroke-color: var(--color4);
-    position: relative;
-    /* top: -2.7rem */
 }
 
 .right h2 {
@@ -41,6 +61,7 @@
 
 .right p {
     font-size: 1.8rem;
+    text-align: justify;
 }
 
 .lines {
@@ -53,7 +74,6 @@
             var(--color1) 15px,
             var(--color1) 20px,
             transparent 40px);
-            /* margin-top: 2rem; */
 }
 
 @media screen and (max-width: 968px) {
@@ -61,6 +81,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .right  {
@@ -72,5 +94,17 @@
 
     .right p {
         text-align: justify;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .right h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .right h1 {
+        font-size: 4.5rem;
     }
 }

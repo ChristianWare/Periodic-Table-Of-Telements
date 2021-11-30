@@ -7,9 +7,10 @@ function MovieDetailsPage({ result }) {
   return (
     <Layout>
       <div className={styles.mdPageContainer}>
-        {/* <div className={styles.lines}></div> */}
         <div className={styles.left}>
-          <Movie title={result.title} poster_path={result.poster_path} />
+          <div className={styles.imgContainer}>
+            <Movie title={result.title} poster_path={result.poster_path} />
+          </div>
         </div>
         <div className={styles.right}>
           <div className={styles.lines}></div>
