@@ -1,16 +1,21 @@
 import styles from "../../styles/HBO.module.css";
+import Link from 'next/link'
 
-function HBO({ hbo }) {
+function HBO({ hboShows }) {
   return (
     <div className={styles.row4Container}>
       <div className={styles.content}>
         <div className={styles.left}>
-          {hbo.results.map((h) => (
+          {hboShows.map((h) => (
             <div key={h.title} className={styles.box1}>
-              <div className={styles.elementDetails}>
-                <h2 className={styles.elementSymbol}>{h.title.slice(0, 2)}</h2>
-                <p className={styles.elementname}>{h.title.slice(0, 12)}</p>
-              </div>
+              <Link href={`/movies/${h.id}`}>
+                <div className={styles.elementDetails}>
+                  <h2 className={styles.elementSymbol}>
+                    {h.title.slice(0, 2)}
+                  </h2>
+                  <p className={styles.elementname}>{h.title.slice(0, 12)}</p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

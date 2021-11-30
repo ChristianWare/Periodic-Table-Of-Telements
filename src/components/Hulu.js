@@ -2,7 +2,6 @@ import styles from "../../styles/Hulu.module.css";
 import Link from "next/link";
 
 function Hulu({ huluMovies }) {
-  console.log(huluMovies);
   return (
     <div className={styles.row2Container}>
       <div className={styles.content}>

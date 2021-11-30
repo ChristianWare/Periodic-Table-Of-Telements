@@ -60,6 +60,7 @@
 .elementSymbol {
     font-size: 2.5rem;
     text-transform: capitalize;
+    text-align: center;
 }
 
 .elementname {
