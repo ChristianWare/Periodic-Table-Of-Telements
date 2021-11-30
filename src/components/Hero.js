@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div className={styles.heroContainer}>
       <h1>
-        PERIODIC TABLE OF <br />{" "}
+        PERIODIC TABLE OF <br />
         <span className={styles.underline}>
           <span className={styles.tel}>TELE</span>
           MENTS

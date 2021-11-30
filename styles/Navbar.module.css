@@ -7,35 +7,23 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 3rem 0rem 1.5rem 0rem;
-
+    padding: 3rem 0rem 0rem;
 }
 
-.navbar .navbarLogo {
+.tel {
+    font-family: 'PhageRegular', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: .01px;
+    -webkit-text-stroke-color: var(--color4);
+    padding-right: 5px;
+}
+
+.navbarLogo {
     cursor: pointer;
-    position: relative;
-    left: 1rem;
-    margin-left: 0px;
 }
 
-.navbarIcon {
-    font-size: 2rem;
-    margin-right: 1rem;
-    position: relative;
-    top: 0.3rem;
-    left: -1.2rem;
-    color: var(--color3);
-}
-
-
-
-.navbarLogo a {
-    font-size: 2rem;
-    font-weight: bold;
-    white-space: nowrap;
-    position: relative;
-    left: -1.2rem;
-    color: var(--color3);
+.logo {
+    font-family: 'PhageRegular', sans-serif;
 }
 
 .navMenu {
@@ -56,9 +44,9 @@
     padding-bottom: 0.25rem;
     position: relative;
     transition: none;
-    /* font-size: 1.8rem; */
+    font-size: 1.5rem;
     font-weight: 600;
-    color: var(--color3);
+    text-transform: uppercase;
 }
 
 .navItem a::before {
@@ -87,7 +75,7 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--color3);
+    background-color: var(--color4);
     cursor: pointer;
 }
 
@@ -108,13 +96,13 @@
     }
 
     .hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(405deg);
-        transform: translateY(8px) rotate(405deg);
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
     }
 
     .hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-405deg);
-        transform: translateY(-8px) rotate(-405deg);
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     .navMenu {
@@ -127,41 +115,36 @@
         text-align: center;
         font-weight: bold;
         transition: 0.3s;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        clip-path: polygon(100% 0, 0 0, 50% 100%);
-        border: 2px solid var(--color1);
+        border: 2px solid var(--color4);
         background-color: var(--color1);
         color: var(--color4);
-        backdrop-filter: blur(6px);
     }
 
     .navMenu a {
         margin-bottom: .5rem;
-        font-size: 2.5rem;
+        font-size: 3rem;
+        font-family: 'PhageRegular', sans-serif;
+        letter-spacing: .4rem;
+        background-color: transparent;
+        padding: 0.5rem 3rem;
+        color: transparent;
+        margin-top: 1rem;
+            -webkit-text-stroke-width: .01px;
+            -webkit-text-stroke-color: var(--color4);
+        transition: all 0.1s ease-in
     }
 
-    .navItem a::before {
-        background-color: var(--color3);
+    .navMenu a:hover {
+        color: var(--color4);
+        transition: all 0.1s ease-in
     }
-
-    .navItem a:hover::before {
-        width: 100%;
-    }
-
 
     .navMenu.active {
         right: 0;
     }
 
-    .navMenu a {
-        background-color: transparent;
-        padding: 0.5rem 3rem;
-        color: var(--color3);
-        margin-right: 4rem;
-        margin-top: 1rem;
-        /* border: solid 2px var(--color4) */
-    }
 }
 
 @media screen and (max-width: 480px) {

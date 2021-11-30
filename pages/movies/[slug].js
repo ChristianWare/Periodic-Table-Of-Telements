@@ -1,11 +1,16 @@
 import Layout from "../../src/components/Layout";
+import Image from 'next/image'
+import Movie from "../../src/components/Movie";
 
-function MovieDetailsPage({ movies }) {
-  console.log(movies)
+const BASE_URL = 'https://image.tmdb.org/t/p/w500';
+
+function MovieDetailsPage({ result }) {
+  console.log(result);
   return (
     <Layout>
       <div>
-        {movies.title}
+        <Movie title={result.title} poster_path={result.poster_path} />
+        <p>{result.overview}</p>
       </div>
     </Layout>
   );
@@ -13,22 +18,18 @@ function MovieDetailsPage({ movies }) {
 
 export default MovieDetailsPage;
 
-export async function getServerSideProps({ query: { slug } }) {
-   const res = await fetch(
-     "https://streaming-availability.p.rapidapi.com/search/ultra?country=us&services=netflix%2Chulu&type=movie&order_by=imdb_vote_count&year_min=2000&year_max=2020&page=4&genres=18%2C80&genres_relation=or&desc=true&language=en&min_imdb_rating=70&max_imdb_rating=90&min_imdb_vote_count=10000&max_imdb_vote_count=1000000&output_language=en",
-     {
-       method: "GET",
-       headers: {
-         "x-rapidapi-host": "streaming-availability.p.rapidapi.com",
-         "x-rapidapi-key": process.env.PRIVATE_API_KEY,
-       },
-     }
-   );
-   const movies = await res.json()
-
+export async function getServerSideProps(context) {
+  const { slug } = context.query;
+  const request = await fetch(
+    `https://api.themoviedb.org/3/movie/${slug}?api_key=${process.env.TMDB_API_KEY}&language=en-US`
+  ).then((response) => response.json());
+  
   return {
     props: {
-      movies,
+      result: request,
     },
   };
 }
+
+
+
