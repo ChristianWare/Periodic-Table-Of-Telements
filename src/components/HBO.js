@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 function HBO({ hboShows }) {
   return (
+    <>
     <div className={styles.row4Container} id='hbo'>
       <div className={styles.content}>
         <div className={styles.left}>
@@ -21,6 +22,8 @@ function HBO({ hboShows }) {
         </div>
       </div>
     </div>
+      <div className={styles.lines}></div>
+      </>
   );
 }
 

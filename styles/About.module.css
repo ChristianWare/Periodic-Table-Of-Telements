@@ -1,0 +1,85 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.content h1 {
+    font-family: 'PhageRegular', sans-serif;
+    font-size: 7rem;
+    text-align: left;
+    letter-spacing: .5rem;
+    color: var(--color4);
+    color: transparent;
+    -webkit-text-stroke-width: .01px;
+    -webkit-text-stroke-color: var(--disney);
+}
+
+.metaInfo {
+    padding: 10rem 0rem;
+}
+
+.metaInfo h1 {
+    -webkit-text-stroke-color: var(--amazon);
+}
+
+.metaInfo h1:nth-child(2) {
+    -webkit-text-stroke-color: var(--netflix);
+}
+
+.metaInfo h1:nth-child(4) {
+    -webkit-text-stroke-color: var(--hulu);
+}
+
+.metaInfo h1:nth-child(6) {
+    -webkit-text-stroke-color: var(--amazon);
+}
+
+.metaInfo h1:nth-child(8) {
+    -webkit-text-stroke-color: var(--hbo);
+}
+
+.metaInfo h1:nth-child(10) {
+    -webkit-text-stroke-color: var(--disney);
+}
+.metaInfo h1:nth-child(12) {
+    -webkit-text-stroke-color: var(--paramount);
+}
+.metaInfo h1:nth-child(14) {
+    -webkit-text-stroke-color: var(--peacock);
+}
+
+.metaInfo p {
+    margin-bottom: 5rem;
+    text-align: justify;
+}
+
+.lines {
+    background-color: var(--color1);
+    height: 7rem;
+    width: 100%;
+    background: repeating-linear-gradient(45deg,
+            var(--color4),
+            var(--color4) 15px,
+            var(--color1) 15px,
+            var(--color1) 20px,
+            transparent 40px);
+}
+
+@media screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 5rem;
+    }
+
+    .content h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .content h1 {
+        font-size: 4.5rem;
+    }
+}

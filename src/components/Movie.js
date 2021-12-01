@@ -8,7 +8,6 @@ function Movie({ title, index, poster_path }) {
         src={IMAGES_API + poster_path}
         width={390}
         height={565}
-        // objectFit='cover'
         alt={title}
       />
     </div>

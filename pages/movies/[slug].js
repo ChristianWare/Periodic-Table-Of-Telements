@@ -9,18 +9,29 @@ function MovieDetailsPage({ result }) {
       <div className={styles.mdPageContainer}>
         <div className={styles.left}>
           <div className={styles.imgContainer}>
-            <Movie title={result.title} poster_path={result.poster_path} />
+            <Movie
+              className={styles.img}
+              title={result.title}
+              poster_path={result.poster_path}
+            />
           </div>
         </div>
         <div className={styles.right}>
           <div className={styles.lines}></div>
           <h1>{result.title}</h1>
           <div className={styles.lines}></div>
-          <h2>Overview:</h2>
+         <div className={styles.metaInfo}>
+
+          <h2 className={styles.overview}>Overview:</h2>
           <p>{result.overview}</p>
           <br />
           <h2>Runtime:</h2>
           <p>{result.runtime} Minutes</p>
+          <h2>Release Date:</h2>
+          <p>{result.release_date}</p>
+          <h2>Average Viewer Rating:</h2>
+          <p>{result.vote_average}</p>
+         </div> 
         </div>
       </div>
     </Layout>

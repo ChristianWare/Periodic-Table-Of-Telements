@@ -60,6 +60,19 @@
     transition: all 0.1s ease;
 }
 
+.lines {
+    margin-top: 5rem;
+    background-color: var(--color1);
+    height: 10rem;
+    width: 100%;
+    background: repeating-linear-gradient(45deg,
+            var(--color4),
+            var(--color4) 15px,
+            var(--color1) 15px,
+            var(--color1) 20px,
+            transparent 40px);
+}
+
 @media screen and (max-width: 868px) {
     .row4Container {
         padding: 1rem 0;
