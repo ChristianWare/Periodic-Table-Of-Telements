@@ -1,5 +1,5 @@
 .notFoundPageContainer {
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 
 
@@ -24,7 +24,12 @@
     cursor: pointer;
 }
 
+.content {
+    padding-bottom: 5rem;
+}
+
 .lines {
+
     background-color: var(--color1);
     height: 7rem;
     width: 100%;

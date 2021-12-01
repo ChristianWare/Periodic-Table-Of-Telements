@@ -13,7 +13,7 @@ function Layout({ title, keywords, description, children }) {
       </Head>
       <Navbar />
       <div>{children}</div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

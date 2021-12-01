@@ -6,17 +6,19 @@ function NotFoundPage() {
   return (
     <Layout>
       <div className={styles.notFoundPageContainer}>
-        <div className={styles.lines}></div>
-        <h1>404 Page Not Found</h1>
-        <h1>
-          PLEASE GO
-          <Link href='/'>
-            <a>
-              <span>HOME</span>
-            </a>
-          </Link>
-        </h1>
-        <div className={styles.lines}></div>
+        <div className={styles.content}>
+          <div className={styles.lines}></div>
+          <h1>404 Page Not Found</h1>
+          <h1>
+            PLEASE GO
+            <Link href='/'>
+              <a>
+                <span>HOME</span>
+              </a>
+            </Link>
+          </h1>
+          <div className={styles.lines}></div>
+        </div>
       </div>
     </Layout>
   );

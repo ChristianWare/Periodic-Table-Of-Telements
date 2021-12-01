@@ -1,0 +1,138 @@
+.fContainer {
+    border-top: 2px solid var(--color4);
+    padding: 50px 0 30px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.fContainer h5 {
+    font-family: 'PhageRegular',
+    sans-serif;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+
+.tel {
+    font-family: 'PhageRegular', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: .01px;
+    -webkit-text-stroke-color: var(--color4);
+    padding-right: 5px;
+}
+
+
+.logo {
+    font-family: 'PhageRegular', sans-serif;
+    font-size: 2.5rem;
+}
+
+.homeArrow {
+    font-size: 3rem;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+
+
+.row {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.col p {
+    margin-bottom: 12px;
+}
+
+.col button {
+    border: none;
+    padding: 10px;
+    width: 80%;
+    background-color: var(--accent2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.fDescription {
+    margin-top: 30px;
+    width: 80%;
+}
+
+.col h5 {
+    width: fit-content;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+    border-bottom: 2px solid var(--accent2);
+}
+
+
+
+.col ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.fSocialIcons {
+    cursor: pointer;
+}
+
+.bottomBorder {
+    border: 0;
+    border-bottom: 1px solid var(--accent2);
+    margin: 20px auto;
+}
+
+.copyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fCopyLogo {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.fcopyIcon {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    position: relative;
+    top: 0.3rem;
+    left: -1.2rem;
+}
+
+@media (max-width: 700px) {
+    .fContainer {
+        bottom: unset;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+
+    .col:nth-child(2),
+    .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+}
