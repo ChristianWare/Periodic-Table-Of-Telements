@@ -1,7 +1,4 @@
 import Link from "next/link";
-import { SiHackthebox } from "react-icons/si";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { AiOutlineMail } from "react-icons/ai";
 import { BiHomeAlt } from "react-icons/bi";
 import styles from "../../styles/Footer.module.css";
 
@@ -20,7 +17,11 @@ function Footer() {
           </div>
 
           <p className={styles.fDescription}>
-            Need something to watch? Give Telements a try.
+            The Periodic Table of Telements (televion + elements = "tele"ments)
+            is a reference chart showing the most up to date movie data from
+            each major streaming platform. It is organized so that you can
+            quickly get information on individual telements such as their title,
+            breif overview, runtime, release date, an average viewer rating.
           </p>
           <Link href='/'>
             <BiHomeAlt className={styles.homeArrow} />
