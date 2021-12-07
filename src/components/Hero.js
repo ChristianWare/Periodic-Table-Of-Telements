@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className={styles.heroContainer}>
       <h1>
-        test TABLE OF <br />
+        PERIODIC TABLE OF <br />
         <span className={styles.underline}>
           <span className={styles.tel}>TELE</span>
           MENTS
@@ -25,7 +25,7 @@ function Hero() {
         <Link href='#hbo' passHref>
           <h4>Hbo Max</h4>
         </Link>
-
+        
       </div>
     </div>
   );
