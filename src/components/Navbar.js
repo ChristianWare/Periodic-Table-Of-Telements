@@ -77,10 +77,3 @@ function Navbar() {
 
 export default Navbar
 
-
-
-
-                    {/* <span className={styles.navbarLogo}>
-              <BsBellFill className={styles.navbarIcon} />
-              <a>Taco Bell</a>
-            </span> */}

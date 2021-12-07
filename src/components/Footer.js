@@ -16,7 +16,7 @@ function Footer() {
             </h1>
           </div>
 
-          <p className={styles.fDescription}>
+          <p className={styles.fDescription} lang='en'>
             The Periodic Table of Telements (televion + elements = "tele"ments)
             is a reference chart showing the most up to date movie data from
             each major streaming platform. It is organized so that you can
@@ -44,17 +44,33 @@ function Footer() {
             <li>
               <a>Spectre</a>
             </li>
-
             <li>
               <a>Skyfall</a>
             </li>
-
             <li>
               <a>No Time To Die</a>
             </li>
-
             <li>
               <a>Quantum Solace</a>
+            </li>
+          </ul>
+        </div>
+        <div className={styles.col}>
+          <Link href={"/" + "#peacock"}>
+            <h5>Peacock</h5>
+          </Link>
+          <ul>
+            <li>
+              <a>The Office</a>
+            </li>
+            <li>
+              <a>Parks & Rec</a>
+            </li>
+            <li>
+              <a>Law & Order</a>
+            </li>
+            <li>
+              <a>A.P. Bio</a>
             </li>
           </ul>
         </div>
@@ -66,15 +82,12 @@ function Footer() {
             <li>
               <a>Ant Man</a>
             </li>
-
             <li>
               <a>Spider Man</a>
             </li>
-
             <li>
               <a>Avengers</a>
             </li>
-
             <li>
               <a>Iron Man</a>
             </li>
@@ -85,7 +98,7 @@ function Footer() {
       <div className={styles.copyContainer}>
         <p lassName={styles.fCopy}>
           <a>
-            Telements {new Date().getFullYear()} &copy; - All Rights Reserved
+            Telements {new Date().getFullYear()} &copy; || Designed and Developed by Christian Ware
           </a>
         </p>
       </div>
