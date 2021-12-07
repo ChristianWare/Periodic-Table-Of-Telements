@@ -1,5 +1,5 @@
 import styles from "../../styles/Row1.module.css";
-import Link from 'next/link'
+import Link from "next/link";
 
 function Row1({ huluMovies }) {
   return (
@@ -7,7 +7,7 @@ function Row1({ huluMovies }) {
       <div className={styles.content}>
         {huluMovies.slice(12, 13).map((h) => (
           <div key={h.name} className={styles.box1}>
-            <Link href={`/movies/${h.id}`}>
+            <Link href={`/movies/${h.id}`} passHref>
               <div className={styles.elementDetails}>
                 <h2 className={styles.elementSymbol}>{h.title.slice(3, 5)}</h2>
                 <p className={styles.elementname}>{h.title.slice(0, 12)}</p>
@@ -17,7 +17,7 @@ function Row1({ huluMovies }) {
         ))}
         {huluMovies.slice(10, 11).map((h) => (
           <div key={h.name} className={styles.box2}>
-            <Link href={`/movies/${h.id}`}>
+            <Link href={`/movies/${h.id}`} passHref>
               <div className={styles.elementDetails}>
                 <h2 className={styles.elementSymbol}>{h.title.slice(3, 5)}</h2>
                 <p className={styles.elementname}>{h.title.slice(0, 12)}</p>

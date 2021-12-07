@@ -1,4 +1,4 @@
-import styles from '../../styles/Paramount.module.css'
+ import styles from '../../styles/Paramount.module.css'
 import { RiArrowLeftDownLine } from 'react-icons/ri'
 import Link from 'next/link'
 
@@ -9,7 +9,7 @@ function Paramount({ paraMovies }) {
         <div className={styles.content}>
           {paraMovies.map((p) => (
             <div key={p.title} className={styles.box1}>
-              <Link href={`/movies/${p.id}`}>
+              <Link href={`/movies/${p.id}`} passHref>
                 <div className={styles.elementDetails}>
                   <h2 className={styles.elementSymbol}>
                     {p.title.slice(1, 3)}
@@ -21,7 +21,7 @@ function Paramount({ paraMovies }) {
           ))}
           {paraMovies.map((p) => (
             <div key={p.title} className={styles.box1}>
-              <Link href={`/movies/${p.id}`}>
+              <Link href={`/movies/${p.id}`} passHref>
                 <div className={styles.elementDetails}>
                   <h2 className={styles.elementSymbol}>
                     {p.title.slice(1, 3)}

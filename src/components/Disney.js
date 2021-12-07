@@ -14,7 +14,7 @@ function Disney({ disneyMovies }) {
         <div className={styles.content}>
           {disneyMovies.map((d) => (
             <div key={d.title} className={styles.box1}>
-              <Link href={`/movies/${d.id}`}>
+              <Link href={`/movies/${d.id}`} passHref>
                 <div className={styles.elementDetails}>
                   <h2 className={styles.elementSymbol}>
                     {d.title.slice(0, 2)}
@@ -26,7 +26,7 @@ function Disney({ disneyMovies }) {
           ))}
           {disneyMovies.map((d) => (
             <div key={d.title} className={styles.box1}>
-              <Link href={`/movies/${d.id}`}>
+              <Link href={`/movies/${d.id}`} passHref>
                 <div className={styles.elementDetails}>
                   <h2 className={styles.elementSymbol}>
                     {d.title.slice(0, 2)}

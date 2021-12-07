@@ -17,18 +17,19 @@ function Footer() {
           </div>
 
           <p className={styles.fDescription} lang='en'>
-            The Periodic Table of Telements (televion + elements = "tele"ments)
-            is a reference chart showing the most up to date movie data from
-            each major streaming platform. It is organized so that you can
-            quickly get information on individual telements such as their title,
-            breif overview, runtime, release date, and average viewer rating.
+            The Periodic Table of Telements (televion + elements =
+            &quot;tele&quot;ments) is a reference chart showing the most up to
+            date movie data from each major streaming platform. It is organized
+            so that you can quickly get information on individual telements such
+            as their title, breif overview, runtime, release date, and average
+            viewer rating.
           </p>
-          <Link href='/'>
+          <Link href='/' passHref>
             <BiHomeAlt className={styles.homeArrow} />
           </Link>
         </div>
         <div className={styles.col}>
-          <Link href={"/" + "#disney"}>
+          <Link href={"/" + "#disney"} passHref>
             <h5>Disney</h5>
           </Link>
           <p>Lion King</p>
@@ -37,7 +38,7 @@ function Footer() {
           <p>Tenent</p>
         </div>
         <div className={styles.col}>
-          <Link href={"/" + "#paramount"}>
+          <Link href={"/" + "#paramount"} passHref>
             <h5>Paramount</h5>
           </Link>
           <ul>
@@ -56,7 +57,7 @@ function Footer() {
           </ul>
         </div>
         <div className={styles.col}>
-          <Link href={"/" + "#peacock"}>
+          <Link href={"/" + "#peacock"} passHref>
             <h5>Peacock</h5>
           </Link>
           <ul>
@@ -75,7 +76,7 @@ function Footer() {
           </ul>
         </div>
         <div className={styles.col}>
-          <Link href={"/" + "#leaving"}>
+          <Link href={"/" + "#leaving"} passHref>
             <h5>Leaving</h5>
           </Link>
           <ul>
@@ -98,7 +99,8 @@ function Footer() {
       <div className={styles.copyContainer}>
         <p lassName={styles.fCopy}>
           <a>
-            Telements {new Date().getFullYear()} &copy; || Designed and Developed by Christian Ware
+            Telements {new Date().getFullYear()} &copy; || Designed and
+            Developed by Christian Ware
           </a>
         </p>
       </div>

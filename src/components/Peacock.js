@@ -14,8 +14,8 @@ function Peacock({ peacockMovies }) {
         <div className={styles.content}>
           <div className={styles.box1}>
             {peacockMovies.slice(0, 10).map((p) => (
-              <Link href={`/movies/${p.id}`}>
-                <div key={p.title} className={styles.elementDetails}>
+              <Link key={p.title} href={`/movies/${p.id}`} passHref>
+                <div className={styles.elementDetails}>
                   <h2 className={styles.elementSymbol}>
                     {p.title.slice(0, 2)}
                   </h2>
@@ -26,8 +26,8 @@ function Peacock({ peacockMovies }) {
           </div>
           <div className={styles.box2}>
             {peacockMovies.slice(0, 10).map((p) => (
-              <Link href={`/movies/${p.id}`}>
-                <div key={p.title} className={styles.elementDetails}>
+              <Link key={p.title} href={`/movies/${p.id}`} passHref>
+                <div className={styles.elementDetails}>
                   <h2 className={styles.elementSymbol}>
                     {p.title.slice(3, 5)}
                   </h2>
@@ -38,8 +38,8 @@ function Peacock({ peacockMovies }) {
           </div>
           <div className={styles.box2}>
             {peacockMovies.slice(0, 10).map((p) => (
-              <Link href={`/movies/${p.id}`}>
-                <div key={p.title} className={styles.elementDetails}>
+              <Link key={p.title} href={`/movies/${p.id}`} passHref>
+                <div className={styles.elementDetails}>
                   <h2 className={styles.elementSymbol}>
                     {p.title.slice(1, 3)}
                   </h2>

@@ -12,13 +12,13 @@ function about({}) {
           <div className={styles.lines}></div>
           <div className={styles.metaInfo}>
             <p>
-              The Periodic Table of Telements (televion + elements = "tele"ments) is a
-              reference chart showing the most up to date movie data from each
-              major streaming platform. It is organized so that you can quickly
-              get information on individual telements such as their title, breif
-              overview, runtime, release date, and average viewer rating. So if
-              you are looking for something to watch, why not give telemets a
-              try?
+              The Periodic Table of Telements (televion + elements =
+              &quot;tele&quot;ments) is a reference chart showing the most up to
+              date movie data from each major streaming platform. It is
+              organized so that you can quickly get information on individual
+              telements such as their title, breif overview, runtime, release
+              date, and average viewer rating. So if you are looking for
+              something to watch, why not give telemets a try?
             </p>
 
             <h1>Netflix</h1>
@@ -39,13 +39,13 @@ function about({}) {
             <p>
               Amazon Prime Video, or simply Prime Video, is a subscription video
               on-demand over-the-top streaming and rental service of Amazon.com,
-              Inc., offered as a standalone service or as part of Amazon's Prime
-              subscription.
+              Inc., offered as a standalone service or as part of Amazon&rsquo;s
+              Prime subscription.
             </p>
             <h1>HBO Max</h1>
             <p>
               HBO Max is an American subscription video on demand streaming
-              service owned by AT&T's WarnerMedia, through its WarnerMedia
+              service owned by AT&T&rsquo;s WarnerMedia, through its WarnerMedia
               Direct subsidiary.
             </p>
             <h1>Disney</h1>

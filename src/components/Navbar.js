@@ -10,7 +10,7 @@ function Navbar() {
       <header className={styles.headerContainer}>
         <nav className={styles.navbar}>
           <div className={styles.navbarLogo}>
-            <Link href='/'>
+            <Link href='/' passHref>
               <h1>
                 <span className={styles.logo}>
                   <span className={styles.tel}>TELE</span>
@@ -28,32 +28,32 @@ function Navbar() {
             onClick={openMenu}
           >
             <li className={styles.navItem}>
-              <Link href='/'>
+              <Link href='/' passHref>
                 <a onClick={openMenu}>Home</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href='/about'>
+              <Link href='/about' passHref>
                 <a onClick={openMenu}>About</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href={"/" + "#disney"}>
+              <Link href={"/" + "#disney"} passHref>
                 <a onClick={openMenu}>Disney</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href={"/" + "#paramount"}>
+              <Link href={"/" + "#paramount"} passHref>
                 <a onClick={openMenu}>Paramount</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href={"/" + "#peacock"}>
+              <Link href={"/" + "#peacock"} passHref>
                 <a onClick={openMenu}>Peacock</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href={"/" + "#leaving"}>
+              <Link href={"/" + "#leaving"} passHref>
                 <a onClick={openMenu}>Leaving</a>
               </Link>
             </li>
