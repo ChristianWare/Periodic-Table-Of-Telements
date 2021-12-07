@@ -16,7 +16,7 @@ function about({}) {
               reference chart showing the most up to date movie data from each
               major streaming platform. It is organized so that you can quickly
               get information on individual telements such as their title, breif
-              overview, runtime, release date, an average viewer rating. So if
+              overview, runtime, release date, and average viewer rating. So if
               you are looking for something to watch, why not give telemets a
               try?
             </p>

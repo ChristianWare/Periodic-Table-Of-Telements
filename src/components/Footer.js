@@ -21,7 +21,7 @@ function Footer() {
             is a reference chart showing the most up to date movie data from
             each major streaming platform. It is organized so that you can
             quickly get information on individual telements such as their title,
-            breif overview, runtime, release date, an average viewer rating.
+            breif overview, runtime, release date, and average viewer rating.
           </p>
           <Link href='/'>
             <BiHomeAlt className={styles.homeArrow} />
