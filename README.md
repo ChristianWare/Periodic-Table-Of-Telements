@@ -17,6 +17,8 @@ The Periodic Table of Telements (televion + elements = "tele"ments) is a referen
 Here are a few images from Telements:
 
 ![Home Page](https://telements.co/images/img1.png)
+![Movie Details Page](https://telements.co/images/img4.png)
+![404 Page](https://telements.co/images/404.png)
 
 ---
 
