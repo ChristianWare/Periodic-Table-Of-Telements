@@ -29,7 +29,7 @@ Movie Details Page
 
 ## Technologies:
 
-This project was built with Next JS and React. Each page has data being pulled from the TMDB API on the server with the "getServerSideProps" function in NextJs. It is styled using CSS Modules. The only dependecy used was react-icons.
+This project was built with Next JS and React. Each page has data being pulled from the TMDB API on the server with the "getServerSideProps" function in NextJs. It is styled using CSS Modules. The only dependency used was react-icons.
 
 ---
 
