@@ -11,7 +11,7 @@
     letter-spacing: .5rem;
     color: var(--color4);
     color: transparent;
-    -webkit-text-stroke-width: .01px;
+    -webkit-text-stroke-width: .1rem;
     -webkit-text-stroke-color: var(--netflix);
     text-align: center;
 }
