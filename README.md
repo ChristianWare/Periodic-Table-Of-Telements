@@ -30,7 +30,7 @@ This project was built with Next JS and React. The Data is being pulled from the
 
 ## How to Install :
 
-First, download or clone the repository. Then, run the development server:
+First, download or clone the repository. Then run the development server:
 
 ```bash
 npm run dev
