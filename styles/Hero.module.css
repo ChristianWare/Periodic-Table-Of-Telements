@@ -8,7 +8,7 @@
 
 .heroContainer h1 {
    font-family: 'PhageRegular', sans-serif;
-   font-size: 7rem;
+font-size: 7rem;
    text-align: center;
    letter-spacing: .5rem;
    color: var(--color4);
@@ -22,8 +22,9 @@
     font-family: 'PhageRegular',
     sans-serif;
     color: transparent;
-    -webkit-text-stroke-width: .01px;
+    -webkit-text-stroke-width: .2rem;
     -webkit-text-stroke-color: var(--color4);
+    font-weight: 500;
 }
 
 .underline {

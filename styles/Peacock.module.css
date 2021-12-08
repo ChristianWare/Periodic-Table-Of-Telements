@@ -34,7 +34,7 @@
     font-family: 'PhageRegular',
         sans-serif;
     color: transparent;
-    -webkit-text-stroke-width: .01px;
+    -webkit-text-stroke-width: .1rem;
     -webkit-text-stroke-color: var(--peacock);
 }
 

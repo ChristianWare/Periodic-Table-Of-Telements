@@ -32,7 +32,7 @@
     font-family: 'PhageRegular',
         sans-serif;
     color: transparent;
-    -webkit-text-stroke-width: .01px;
+    -webkit-text-stroke-width: .1rem;
     -webkit-text-stroke-color: var(--color4);
     padding-right: .5rem;
     letter-spacing: .5rem;
@@ -93,13 +93,12 @@
     height: 10rem;
     width: 100%;
     background: repeating-linear-gradient(
-        45deg,
+        -45deg,
         var(--color4),
         var(--color4) 15px,
         var(--color1) 15px,
         var(--color1) 20px,
-        transparent 40px
-    );
+        var(--color1) 40px);
 }
 
 @media screen and (max-width: 480px) {

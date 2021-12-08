@@ -18,7 +18,7 @@ function MovieDetailsPage({ result }) {
         <div className={styles.right}>
           <div className={styles.lines}></div>
           <h1>{result.title}</h1>
-          <div className={styles.lines}></div>
+          <div className={styles.lines2}></div>
           <div className={styles.metaInfo}>
             <h2 className={styles.overview}>Overview:</h2>
             <p>{result.overview}</p>

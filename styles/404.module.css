@@ -28,8 +28,8 @@
     padding-bottom: 5rem;
 }
 
-.lines {
-
+.lines, 
+.lines2 {
     background-color: var(--color1);
     height: 7rem;
     width: 100%;
@@ -39,6 +39,15 @@
             var(--color1) 15px,
             var(--color1) 20px,
             transparent 40px);
+}
+
+.lines2 {
+    background: repeating-linear-gradient(-45deg,
+        var(--color4),
+        var(--color4) 15px,
+        var(--color1) 15px,
+        var(--color1) 20px,
+        transparent 40px);
 }
 
 @media screen and (max-width: 480px) {

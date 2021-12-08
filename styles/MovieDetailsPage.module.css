@@ -32,7 +32,7 @@
     text-align: left;
     letter-spacing: .5rem;
     color: transparent;
-    -webkit-text-stroke-width: .01px;
+    -webkit-text-stroke-width: .1rem;
     -webkit-text-stroke-color: var(--color4);
 }
 
@@ -50,7 +50,8 @@
     text-align: justify;
 }
 
-.lines {
+.lines,
+.lines2 {
     background-color: var(--color1);
     height: 7rem;
     width: 100%;
@@ -59,7 +60,16 @@
             var(--color4) 15px,
             var(--color1) 15px,
             var(--color1) 20px,
-            transparent 40px);
+            var(--color1) 40px);
+}
+
+.lines2 {
+    background: repeating-linear-gradient(-45deg,
+        var(--color4),
+        var(--color4) 15px,
+        var(--color1) 15px,
+        var(--color1) 20px,
+        var(--color1) 40px);
 }
 
 .metaInfo {

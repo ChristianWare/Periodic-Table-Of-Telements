@@ -19,6 +19,7 @@
     margin-bottom: 5rem;
     width: fit-content;
     margin-top: -1.5rem;
+    z-index: -99;
 }
 
 .text h1 {
@@ -36,7 +37,7 @@
     font-family: 'PhageRegular',
         sans-serif;
     color: transparent;
-    -webkit-text-stroke-width: .01px;
+    -webkit-text-stroke-width: .1rem;
     -webkit-text-stroke-color: var(--paramount);
 }
 
@@ -76,6 +77,7 @@
     border: 2px solid var(--paramount);
     cursor: pointer;
     transition: all .1s ease-in;
+    z-index: 999;
 }
 
 

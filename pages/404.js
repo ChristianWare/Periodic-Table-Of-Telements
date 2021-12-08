@@ -17,7 +17,7 @@ function NotFoundPage() {
               </a>
             </Link>
           </h1>
-          <div className={styles.lines}></div>
+          <div className={styles.lines2}></div>
         </div>
       </div>
     </Layout>

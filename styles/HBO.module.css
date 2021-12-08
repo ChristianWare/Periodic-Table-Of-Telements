@@ -70,7 +70,7 @@
             var(--color4) 15px,
             var(--color1) 15px,
             var(--color1) 20px,
-            transparent 40px);
+            var(--color1) 40px);
 }
 
 @media screen and (max-width: 868px) {

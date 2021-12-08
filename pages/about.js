@@ -9,7 +9,7 @@ function about({}) {
         <div className={styles.content}>
           <div className={styles.lines}></div>
           <h1>ABOUT TELEMENTS</h1>
-          <div className={styles.lines}></div>
+          <div className={styles.lines2}></div>
           <div className={styles.metaInfo}>
             <p>
               The Periodic Table of Telements (televion + elements =
