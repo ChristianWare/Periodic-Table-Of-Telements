@@ -21,7 +21,7 @@ function Footer() {
             &quot;tele&quot;ments) is a reference chart showing the most up to
             date movie data from each major streaming platform. It is organized
             so that you can quickly get information on individual telements such
-            as their title, breif overview, runtime, release date, and average
+            as their title, brief overview, runtime, release date, and average
             viewer rating.
           </p>
           <Link href='/' passHref>
