@@ -90,3 +90,10 @@
         padding-right: .3rem;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .box1:hover,
+    .box2:hover {
+        transform: scale(.5, .5);
+    }
+}

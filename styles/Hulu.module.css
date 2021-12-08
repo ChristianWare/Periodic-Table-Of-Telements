@@ -10,7 +10,6 @@
     flex-wrap: wrap;
 }
 
-
 .box1, .box2 {
     display: flex;
     align-items: center;
@@ -20,7 +19,6 @@
     padding-bottom: 10px;
     padding-right: 1rem;
 }
-
 
 .box1 {
     margin-right: 1rem;
@@ -45,8 +43,6 @@
     transition: all 0.1s ease;
 }
 
-
-
 .elementDetails:hover {
     transform: scale(2.5, 2.5);
     z-index: 1;
@@ -55,7 +51,6 @@
     border-color: var(--color1);
     transition: all 0.1s ease;
 }
-
 
 .elementSymbol {
     font-size: 2.5rem;
@@ -74,17 +69,12 @@
         align-items: center;
     }
 
-    /* .box1 {
-        margin-right: 0rem;
-    } */
-
     .box2 {
         justify-content: center;
         flex-wrap: wrap;
         margin-right: 0rem;
     }
 }
-
 
 @media screen and (max-width: 670px) {
     .box1 {
@@ -95,5 +85,11 @@
 @media screen and (max-width: 645px) {
     .box1 {
         margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .elementDetails:hover {
+        transform: scale(.5, .5);
     }
 }

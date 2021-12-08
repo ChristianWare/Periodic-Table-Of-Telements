@@ -188,4 +188,7 @@
     .tel {
        -webkit-text-stroke-width: 1px;
     }
+    .elementDetails:hover {
+        transform: scale(.5, .5);
+    }
 }

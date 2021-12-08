@@ -91,3 +91,9 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .box1:hover {
+        transform: scale(.5, .5);
+    }
+}

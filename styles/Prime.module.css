@@ -71,17 +71,11 @@
         align-items: center;
     }
 
-    /* .box1 {
-        margin-right: 0rem;
-    } */
-
     .box2 {
         justify-content: center;
         flex-wrap: wrap;
-        /* margin-right: 0rem; */
     }
 }
-
 
 @media screen and (max-width: 645px) {
     .box1 {
@@ -96,3 +90,8 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .elementDetails:hover {
+        transform: scale(.5, .5);
+    }
+}
