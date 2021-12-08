@@ -21,7 +21,7 @@ export default function Home({
 }) {
   return (
     <>
-      <Layout>
+      <Layout title='Telements'>
         <Hero />
         <Row1 huluMovies={huluMovies} />
         <Hulu huluMovies={huluMovies} />
