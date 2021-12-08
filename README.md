@@ -2,7 +2,7 @@
 
 ## Demo Link:
 
-[telements.io](telements.io)
+[telements.co](telements.co)
 
 ---
 
