@@ -97,7 +97,7 @@ function Footer() {
       </div>
       <hr className={styles.bottomBorder} />
       <div className={styles.copyContainer}>
-        <p lassName={styles.fCopy}>
+        <p className={styles.fCopy}>
           <a>
             Telements {new Date().getFullYear()} &copy; || Designed and
             Developed by Christian Ware
